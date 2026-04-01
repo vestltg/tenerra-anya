@@ -3571,31 +3571,6 @@
       });
     });
 
-    /* ─── MORE DROPDOWN ─── */
-    document.addEventListener('DOMContentLoaded', function () {
-      var moreTrigger = document.querySelector('.nav-more-trigger');
-      var moreMenu    = document.getElementById('more-menu');
-
-      if (!moreTrigger || !moreMenu) return;
-
-      function openMore()  { moreTrigger.setAttribute('aria-expanded', 'true');  moreMenu.style.display = 'block'; }
-      function closeMore() { moreTrigger.setAttribute('aria-expanded', 'false'); moreMenu.style.display = ''; }
-      function isMoreOpen() { return moreTrigger.getAttribute('aria-expanded') === 'true'; }
-
-      moreTrigger.addEventListener('click', function (e) {
-        e.stopPropagation();
-        isMoreOpen() ? closeMore() : openMore();
-      });
-
-      document.addEventListener('click', function (e) {
-        if (!moreMenu.contains(e.target) && e.target !== moreTrigger) closeMore();
-      });
-
-      document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape' && isMoreOpen()) { closeMore(); moreTrigger.focus(); }
-      });
-    });
-
     /* ─── NAV DROPDOWN (click-driven only, no hover) ─── */
     document.addEventListener('DOMContentLoaded', function () {
       var trigger = document.querySelector('.nav-dropdown-trigger');
