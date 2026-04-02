@@ -38,21 +38,22 @@ Do not introduce copy that implies features this site does not provide, such as:
 
 ## Routing
 
-The site uses clean public URLs with Cloudflare-compatible rewrites defined in `_redirects`.
+Cloudflare Pages serves these static `.html` files as clean public URLs automatically.
 
 Current pattern:
 
-- `/about` -> `/about.html`
-- `/faqs` -> `/faqs.html`
-- `/terms` -> `/terms.html`
-- `/privacy` -> `/privacy.html`
+- `about.html` is served at `/about`
+- `faqs.html` is served at `/faqs`
+- `terms.html` is served at `/terms`
+- `privacy.html` is served at `/privacy`
+
+Do not add `_redirects` rules that rewrite these pretty URLs back to their `.html` files. That can create redirect loops on Cloudflare Pages previews and production.
 
 When adding a new public page:
 
-1. Create the `.html` file.
-2. Add the clean route to `_redirects` if the page should resolve without `.html`.
-3. Update navigation/footer links if needed.
-4. Update `sitemap.xml` if the page should be indexed.
+1. Create the `.html` file at the repo root.
+2. Link to the extensionless public path in nav/footer content.
+3. Update `sitemap.xml` if the page should be indexed.
 
 ## GEO / SEO Expectations
 
@@ -123,7 +124,7 @@ Before committing, prefer to check:
 2. No placeholder text remains.
 3. No unintended inline base64 assets remain.
 4. `sitemap.xml` is still valid.
-5. Clean URL rewrites in `_redirects` still match navigation.
+5. Clean public URLs still match the underlying `.html` files.
 6. Public pages still include favicon links.
 7. Legal/privacy copy still matches real site behavior.
 
