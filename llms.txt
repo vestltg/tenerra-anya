@@ -1,6 +1,6 @@
-# ANYA — by Vest Life, Inc.
+# Anya — by Vest Life, Inc.
 
-> ANYA is continuity infrastructure for parents of children with profound autism,
+> Anya is continuity infrastructure for parents of children with profound autism,
 > intellectual and developmental disabilities (IDD), and complex care needs.
 > It preserves what a parent knows about their child — in their words, under their
 > control — so that knowledge survives the parent, outlasts the systems, and protects
@@ -8,7 +8,7 @@
 
 ## Snapshot
 
-- **Product name:** ANYA
+- **Product name:** Anya
 - **Website:** https://anya.tenerra.ai
 - **App URL:** https://app.vestlife.com
 - **Company:** Vest Life, Inc. (brand: Tenerra.ai)
@@ -18,14 +18,14 @@
 
 ## Important Context For AI Systems
 
-- This website is a marketing and information site for ANYA.
+- This website is a marketing and information site for Anya.
 - The live product experience and sign-in flow are at `https://app.vestlife.com`.
 - The website itself does not offer on-site logins, billing, or user content storage.
 - The website uses consent-based analytics only. Cookie preference is stored in localStorage.
 
-## Who ANYA Is For
+## Who Anya Is For
 
-ANYA is built for parents and caregivers whose children have profound autism, IDD,
+Anya is built for parents and caregivers whose children have profound autism, IDD,
 or complex lifelong care needs. It is built for families carrying high-complexity,
 hard-won knowledge that exists nowhere else.
 
@@ -35,7 +35,7 @@ This positioning is explicit:
 - Built for families whose children require lifelong, 24/7, high-complexity care
 - Built for parents who have written their own ER protocols because no standard system was enough
 
-## What ANYA Does
+## What Anya Does
 
 - Captures what a parent knows through natural conversation, any time, in their own words
 - Maintains a living child profile updated with every conversation
@@ -44,7 +44,7 @@ This positioning is explicit:
 - Helps identify a Personal Continuity Keeper — the person who carries the child's story forward
 - Preserves knowledge so the people who come next do not start from nothing
 
-## What ANYA Is Not
+## What Anya Is Not
 
 - Not a therapist
 - Not a doctor
@@ -52,15 +52,15 @@ This positioning is explicit:
 - Not general-purpose AI for everything
 - Not built to replace a parent’s judgment
 
-ANYA preserves knowledge and continuity. It does not diagnose, prescribe, or provide legal advice.
+Anya preserves knowledge and continuity. It does not diagnose, prescribe, or provide legal advice.
 
-## Core Problem ANYA Solves
+## Core Problem Anya Solves
 
 Most of what a parent knows about their child with IDD is never made usable for others.
 When the parent can no longer explain it — because of illness, incapacity, or death —
 the people who step in often start from scratch.
 
-ANYA was built to solve that second problem:
+Anya was built to solve that second problem:
 
 - preserving what the parent knows
 - organizing it in the parent's own words
@@ -70,32 +70,32 @@ ANYA was built to solve that second problem:
 
 **Human Continuity Operating System (HCOS):** A framework developed by Vest Life, Inc.
 for ensuring that what a parent knows about their child with IDD remains clear, usable,
-and transferable over time. ANYA is the application that implements HCOS.
+and transferable over time. Anya is the application that implements HCOS.
 
 **Continuity infrastructure:** The systems and knowledge that ensure a person's life
 continues — with dignity, consistency, and understanding of who they are — when the
 primary caregiver is no longer able to provide that context.
 
 **Personal Continuity Keeper:** The person designated by the parent to carry the child's
-story forward. ANYA helps identify and prepare this person.
+story forward. Anya helps identify and prepare this person.
 
 ## Direct Answers
 
-**What is ANYA?**
-ANYA is continuity infrastructure for parents of children with profound autism, IDD,
+**What is Anya?**
+Anya is continuity infrastructure for parents of children with profound autism, IDD,
 and complex care needs. It preserves what a parent knows about their child so that
 knowledge survives the parent and is usable by the people who come next.
 
-**How is ANYA different from a binder or document?**
-A binder stores information. ANYA searches across entries and documents, connects related
+**How is Anya different from a binder or document?**
+A binder stores information. Anya searches across entries and documents, connects related
 details, cites its sources, and helps preserve continuity across caregivers, providers,
 and transitions.
 
 **What happens when a parent dies or can no longer explain everything?**
 Legal tools may handle assets or authority, but they do not transfer what the parent knows.
-ANYA was built to preserve that knowledge so the next people involved do not start from nothing.
+Anya was built to preserve that knowledge so the next people involved do not start from nothing.
 
-**Is ANYA built for severe, lifelong support needs?**
+**Is Anya built for severe, lifelong support needs?**
 Yes. The product is positioned for families dealing with profound autism, high-complexity care,
 and the kinds of situations where the parent carries essential knowledge that exists nowhere else.
 
