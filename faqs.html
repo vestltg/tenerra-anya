@@ -90,11 +90,24 @@
     }
 
 
+    .faq-hero {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: calc(72px + var(--space-6)) 20px var(--space-5);
+      text-align: center;
+    }
+
+    .faq-hero h1 {
+      max-width: 780px;
+      margin: 0 auto;
+      text-wrap: balance;
+    }
+
     /* ─── FAQ SECTION ─── */
     .faq-section {
       max-width: 680px;
       margin: 0 auto;
-      padding: var(--space-7) 0;
+      padding: var(--space-5) 0 var(--space-7);
     }
 
     .faq-hero-intro {
@@ -255,6 +268,7 @@
     /* Tablet */
     @media (max-width: 860px) {
       .page-wrap { padding: 0 28px; }
+      .faq-hero { padding-top: calc(72px + var(--space-5)); }
     }
 
     /* Mobile */
@@ -269,13 +283,16 @@
       .page-wrap  { padding: 0 20px; }
 
       /* Push content below the shorter mobile nav */
-      .faq-hero   { padding-top: calc(56px + 48px); }
+      .faq-hero {
+        padding-top: calc(56px + 36px);
+        padding-bottom: var(--space-4);
+      }
 
       /* Hero heading */
       .faq-hero h1 { font-size: 1.65rem; margin-bottom: 16px; }
 
       /* FAQ section */
-      .faq-section { padding: var(--space-7) 0; }
+      .faq-section { padding: var(--space-4) 0 var(--space-7); }
 
       /* Questions — bigger tap target, slightly smaller text */
       .faq-question {
@@ -312,6 +329,7 @@
     /* Very small screens */
     @media (max-width: 380px) {
       .page-wrap  { padding: 0 16px; }
+      .faq-hero { padding-left: 16px; padding-right: 16px; }
       .faq-hero h1 { font-size: 1.45rem; }
     }
 
