@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anya — Frequently Asked Questions</title>
+  <meta name="description" content="Common questions about Anya — the continuity infrastructure built for parents of children with profound autism, IDD, and complex care needs." />
+  <meta name="author" content="Tenerra.ai" />
+  <meta name="theme-color" content="#8256F7" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://anya.tenerra.ai/faqs" />
+
+  <meta property="og:title" content="FAQs — Anya by Tenerra.ai" />
+  <meta property="og:description" content="Common questions about Anya — the continuity infrastructure built for parents of children with profound autism, IDD, and complex care needs." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://anya.tenerra.ai/faqs" />
+  <meta property="og:image" content="https://anya.tenerra.ai/assets/images/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Tenerra.ai" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="FAQs — Anya by Tenerra.ai" />
+  <meta name="twitter:description" content="Common questions about Anya — the continuity infrastructure built for parents of children with profound autism, IDD, and complex care needs." />
+  <meta name="twitter:image" content="https://anya.tenerra.ai/assets/images/og-image.jpg" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=DM+Serif+Display:ital@0;1&amp;family=Montserrat:wght@400;500;600&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/shared.css" />
+
+  <style>
+    /* ─── PAGE WRAPPER — constrains full page width ─── */
+    .page-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 40px;
+      box-sizing: border-box;
+    }
+
+    /* ─── LAYOUT ─── */
+    .section {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 72px 20px;
+    }
+    .section-eyebrow {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #8256F7;
+      text-align: center;
+      margin-bottom: var(--space-2);
+    }
+    .section-headline {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #555;
+      text-align: center;
+      line-height: 1.3;
+      max-width: 640px;
+      margin: 0 auto var(--space-3);
+    }
+    .section-subhead {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      color: #333;
+      text-align: center;
+      max-width: 640px;
+      width: 100%;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+    .section-divider {
+      border: none;
+      border-top: 1px solid var(--color-border);
+      margin: 0 20px;
+      max-width: 680px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
+    .faq-hero {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: calc(72px + var(--space-6)) 20px var(--space-5);
+      text-align: center;
+    }
+
+    .faq-hero h1 {
+      max-width: 780px;
+      margin: 0 auto;
+      text-wrap: balance;
+    }
+
+    /* ─── FAQ SECTION ─── */
+    .faq-section {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: var(--space-5) 0 var(--space-7);
+    }
+
+    .faq-hero-intro {
+      max-width: 640px;
+      margin: 16px auto 0;
+      text-align: center;
+      font-size: 17px;
+      line-height: 1.7;
+      color: #555;
+      text-wrap: balance;
+    }
+
+    /* Section group label */
+    .faq-group-label {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #8256F7;
+      margin-bottom: var(--space-4);
+      margin-top: var(--space-6);
+      padding-top: var(--space-6);
+      border-top: 1px solid var(--color-border);
+    }
+    .faq-group-label:first-child {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none;
+    }
+
+    /* FAQ accordion items */
+    .faq-item {
+      border-bottom: 1px solid var(--color-border);
+    }
+    .faq-item:first-of-type { border-top: 1px solid var(--color-border); }
+
+    /* Override first-of-type when preceded by a group label */
+    .faq-group-label + .faq-item {
+      border-top: 1px solid var(--color-border);
+    }
+
+    .faq-question {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: clamp(1rem, 2vw, 1.15rem);
+      font-weight: 400;
+      color: #1a1a1a;
+      line-height: 1.4;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1.5rem;
+      list-style: none;
+      padding: 2rem 0;
+      border: none;
+      background: none;
+      width: 100%;
+      text-align: left;
+      transition: color var(--transition-fast);
+    }
+    .faq-question:hover {
+      color: #8256F7;
+    }
+    details[open] .faq-question {
+      color: #8256F7;
+    }
+    .faq-question::-webkit-details-marker { display: none; }
+
+    .faq-icon {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 1px solid var(--color-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2px;
+      transition: background var(--transition-fast),
+                  border-color var(--transition-fast),
+                  transform var(--transition-fast);
+    }
+    .faq-question:hover .faq-icon {
+      border-color: #8256F7;
+    }
+    .faq-question:hover .faq-icon svg {
+      stroke: #8256F7;
+    }
+    details[open] .faq-icon {
+      background: #8256F7;
+      border-color: #8256F7;
+      transform: rotate(45deg);
+    }
+    .faq-icon svg { stroke: #999; transition: stroke var(--transition-fast); }
+    details[open] .faq-icon svg { stroke: #ffffff; }
+
+    .faq-answer {
+      font-size: 16px;
+      font-weight: 400;
+      color: #333;
+      line-height: 1.6;
+      padding-bottom: 2rem;
+      max-width: 600px;
+      opacity: 0.85;
+    }
+    details[open] .faq-answer { opacity: 1; }
+
+    .faq-answer p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #333;
+      margin-bottom: 1rem;
+    }
+    .faq-answer p:last-child { margin-bottom: 0; }
+
+    .faq-answer-summary {
+      margin-top: 1rem;
+      font-size: 15px;
+      line-height: 1.7;
+      color: #444;
+    }
+
+    /* Screenshot placeholder — styled for print/pdf readability too */
+    .faq-snippet {
+      margin: 0.75rem 0 0.25rem;
+      padding: 1rem 1.25rem;
+      background: var(--color-primary-soft);
+      border-left: 3px solid var(--color-primary);
+      border-radius: 0 8px 8px 0;
+      font-size: 13px;
+      color: #7c5cbf;
+      font-style: italic;
+      line-height: 1.5;
+    }
+
+    /* ─── FAQ FOOTER ─── */
+    .faq-footer {
+      text-align: center;
+      padding: 2rem 0 0;
+    }
+    .faq-footer-text {
+      font-size: 14px;
+      font-weight: 400;
+      color: #666;
+      font-style: italic;
+    }
+    .faq-footer-link {
+      color: #8256F7;
+      text-decoration: none;
+      font-style: normal;
+      font-weight: 400;
+    }
+    .faq-footer-link:hover { text-decoration: underline; }
+
+
+    /* ─── RESPONSIVE ─── */
+
+    /* Tablet */
+    @media (max-width: 860px) {
+      .page-wrap { padding: 0 28px; }
+      .faq-hero { padding-top: calc(72px + var(--space-5)); }
+    }
+
+    /* Mobile */
+    @media (max-width: 640px) {
+      :root {
+        --space-7: 56px;
+        --space-6: 40px;
+        --space-5: 32px;
+      }
+
+      /* Page wrapper — tighter side margins on small screens */
+      .page-wrap  { padding: 0 20px; }
+
+      /* Push content below the shorter mobile nav */
+      .faq-hero {
+        padding-top: calc(56px + 36px);
+        padding-bottom: var(--space-4);
+      }
+
+      /* Hero heading */
+      .faq-hero h1 { font-size: 1.65rem; margin-bottom: 16px; }
+
+      /* FAQ section */
+      .faq-section { padding: var(--space-4) 0 var(--space-7); }
+
+      /* Questions — bigger tap target, slightly smaller text */
+      .faq-question {
+        font-size: 1rem;
+        padding: 1.25rem 0;
+        min-height: 44px; /* WCAG touch target */
+        align-items: center;
+      }
+
+      /* Answers — full-width images, tighter bottom padding */
+      .faq-answer {
+        padding-bottom: 1.5rem;
+        max-width: 100%;
+      }
+      .faq-answer img {
+        max-width: 100%;
+        border-radius: 8px;
+      }
+
+      /* Answer paragraphs — slightly smaller on mobile */
+      .faq-answer p { font-size: 15px; }
+
+      /* Group labels */
+      .faq-group-label {
+        padding-top: var(--space-5);
+        margin-top: var(--space-5);
+      }
+
+      /* Footer */
+      .footer { padding: 1.5rem 0; }
+      .faq-footer { padding-top: 1.5rem; }
+    }
+
+    /* Very small screens */
+    @media (max-width: 380px) {
+      .page-wrap  { padding: 0 16px; }
+      .faq-hero { padding-left: 16px; padding-right: 16px; }
+      .faq-hero h1 { font-size: 1.45rem; }
+    }
+
+    /* ─── FADE-IN ANIMATION ─── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .faq-hero { animation: fadeUp 0.5s var(--ease-out) both; }
+    .faq-section { animation: fadeUp 0.5s 0.1s var(--ease-out) both; }
+  </style>
+
+  <!-- FAQ structured data (mirrors index pattern) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": "https://anya.tenerra.ai/faqs#faq",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "I just set up my account. What is the next step with Anya?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Start by adding the basics, uploading the documents that matter, and writing down what only you know about your child. Log key events and record moments as they happen so Anya can preserve that knowledge as living continuity infrastructure, not just a static file."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is Anya different from a binder or a document?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A binder stores information. Anya searches across your entries and documents, connects related details, cites its sources, and helps preserve continuity across caregivers, providers, and transitions. It reduces what you have to carry in your head."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does Anya work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Anya holds documents, entries, moments, thoughts, and key events, then searches and cites that information when you ask. It does not guess, prescribe, or give medical advice. It helps externalize what you carry so your child's continuity does not depend on memory alone."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to be tech-savvy to use Anya?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. You upload documents, write entries in plain language, and ask questions. The technology is meant to stay out of the way so you can focus on being the expert on your child."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Anya?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Anya is continuity infrastructure for parents of children with profound autism, IDD, and complex care needs. It helps with today's care demands, preserves what matters over time, and carries forward what you know so your child's continuity does not break during transitions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens to my child when I die?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Legally, a Special Needs Trust can protect your child's financial future. A guardian or successor trustee can step into their designated roles. The system has mechanisms for this. What the system cannot do is transfer what you know. Anya was built for that second problem — preserving what you know about your child and making it accessible to the people who will need it from day one."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How will the people who are there after me know my child the way I do?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The honest answer is: they won't. Not the way you do. But there is a difference between someone who knows nothing and someone who has been given everything you know. Anya preserves that knowledge — built from your words, held in your voice, accessible to the people your child will depend on."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a Special Needs Trust — and what doesn't it cover?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A Special Needs Trust protects your child's financial future. It does not protect the knowledge that makes your child's life worth living — the knowledge only you carry. That is the problem Anya was built to solve."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should I be writing down about my child that no document asks for?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Write down the details only you know: how your child shows pain, what helps them transition, what they fear, what they love, what they are proud of, and what has shaped them. For a child who cannot fully speak for themselves, that knowledge is not supplementary. It is essential continuity."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "My child can't speak for themselves. How do I make sure that's understood after I'm gone?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A diagnosis or support plan cannot fully explain who your child is or what their silence means. The people who come after you need more than labels. They need what you have learned over years. Anya preserves what you teach so others can understand and use it when you cannot explain it directly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is life continuity infrastructure for a child with IDD?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It is the systems and knowledge that ensure a person's life continues — with dignity, with consistency, and with the understanding of who they are — when the primary person who has held that knowledge is no longer able to do so. Anya is knowledge continuity infrastructure."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+<div class="page-wrap">
+
+  <!-- ─── NAV ─── -->
+  <nav class="nav">
+    <a href="/" class="nav-wordmark"><img src="/assets/images/tenerra-logo.png" alt="Anya icon" /><span class="nav-wm-wordmark"><span class="nav-wm-name">anya</span><span class="nav-wm-domain">.tenerra.ai</span></span></a>
+    <ul class="nav-links">
+      <li><a href="/" class="nav-link">Home</a></li>
+      <li><a href="/about" class="nav-link">About</a></li>
+      <li><a href="/faqs" class="nav-link" aria-current="page">FAQs</a></li>
+    </ul>
+
+    <!-- More dropdown: visible when nav-links are hidden (≤860px) -->
+    <div class="nav-more">
+      <button class="nav-more-trigger" aria-expanded="false" aria-controls="more-menu">
+        More
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+          <path d="M2 4l4 4 4-4" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <div class="nav-more-menu" id="more-menu" role="menu">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/faqs">FAQs</a>
+      </div>
+    </div>
+
+    <!-- Primary CTA -->
+    <div class="nav-actions">
+      <a href="https://app.vestlife.com" target="_blank" rel="noopener noreferrer" class="nav-cta">Get Anya</a>
+    </div>
+    <button class="nav-hamburger" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M3 5h14M3 10h14M3 15h14" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </nav>
+  <div class="nav-mobile-menu" id="mobileMenu">
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/faqs">FAQs</a>
+    <a href="https://app.vestlife.com" target="_blank" rel="noopener noreferrer">Get Anya</a>
+  </div>
+
+
+  <!-- ─── HERO ─── -->
+  <div class="faq-hero" role="banner">
+    <p class="section-eyebrow">Frequently Asked Questions</p>
+    <h1>We asked Anya.<br>Here&#8217;s what she told us.</h1>
+    <p class="faq-hero-intro">Questions from parents about continuity, special needs planning, and how Anya helps preserve what only you know about your child.</p>
+  </div>
+
+  <!-- ─── FAQ BODY ─── -->
+  <main>
+    <div class="faq-section" id="faq">
+
+      <!-- ════ SECTION: GETTING STARTED ════ -->
+      <p class="faq-group-label">Getting started</p>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          I just set up my account. What is the next step with Anya?
+          <span class="faq-icon" aria-hidden="true">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke-width="1.5" stroke-linecap="round">
+              <line x1="5" y1="1" x2="5" y2="9"/><line x1="1" y1="5" x2="9" y2="5"/>
+            </svg>
+          </span>
+        </summary>
+        <div class="faq-answer">
+          <img
+            src="/assets/images/faq-q1.png"
+            alt="Anya responds: Welcome. You&#8217;re building continuity infrastructure for Joey — a record that travels with him, doesn&#8217;t depend on any single person&#8217;s memory, and preserves what you know about him so he&#8217;s never reduced to a case file. Steps include: add the basics, upload documents that matter, write entries about what you know, log key events, and record moments as they happen."
+            style="width:100%; max-width:600px; border-radius:12px; border:1px solid var(--color-border); display:block;"
+          />
+          <p class="faq-answer-summary">Start with the basics, upload the documents that matter, and write down what only you know about your child. Log key events and record moments as they happen so Anya can preserve that knowledge as living continuity infrastructure, not just a static file.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          How is Anya different from a binder or a document?
+          <span class="faq-icon" aria-hidden="true">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke-width="1.5" stroke-linecap="round">
+              <line x1="5" y1="1" x2="5" y2="9"/><line x1="1" y1="5" x2="9" y2="5"/>
+            </svg>
+          </span>
+        </summary>
+        <div class="faq-answer">
+          <img
+            src="/assets/images/faq-q2.png"
+            alt="Anya explains how she differs from a binder: she searches across all your entries and documents, connects related information, cites her sources, preserves continuity across providers and caregivers, and reduces what you have to carry."
+            style="width:100%; max-width:600px; border-radius:12px; border:1px solid var(--color-border); display:block;"
+          />
+          <p class="faq-answer-summary">A binder stores information. Anya searches across your entries and documents, connects related details, cites its sources, and helps preserve continuity across caregivers, providers, and transitions. It reduces what you have to carry in your head.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          How does Anya work?
+          <span class="faq-icon" aria-hidden="true">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke-width="1.5" stroke-linecap="round">
+              <line x1="5" y1="1" x2="5" y2="9"/><line x1="1" y1="5" x2="9" y2="5"/>
+            </svg>
+          </span>
+        </summary>
+        <div class="faq-answer">
+          <img
+            src="/assets/images/faq-q3.png"
+            alt="Anya explains how she works: she holds documents, entries, moments, thoughts, and key events — then searches and cites everything when you ask. She doesn't guess or give medical advice. She externalizes what you carry so Sam's continuity doesn't depend on you remembering everything."
+            style="width:100%; max-width:600px; border-radius:12px; border:1px solid var(--color-border); display:block;"
+          />
+          <p class="faq-answer-summary">Anya holds documents, entries, moments, thoughts, and key events, then searches and cites that information when you ask. It does not guess, prescribe, or give medical advice. It helps externalize what you carry so your child&#8217;s continuity does not depend on memory alone.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          Do I need to be tech-savvy to use Anya?
+          <span class="faq-icon" aria-hidden="true">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke-width="1.5" stroke-linecap="round">
+              <line x1="5" y1="1" x2="5" y2="9"/><line x1="1" y1="5" x2="9" y2="5"/>
+            </svg>
+          </span>
+        </summary>
+        <div class="faq-answer">
+          <img
+            src="/assets/images/faq-q4.png"
+            alt="Anya answers: No. You upload documents, write entries in plain language, and ask questions. That's it. The technology is supposed to be invisible. Your job is to be the expert on Sam."
+            style="width:100%; max-width:600px; border-radius:12px; border:1px solid var(--color-border); display:block;"
+          />
+          <p class="faq-answer-summary">No. You upload documents, write entries in plain language, and ask questions. The technology is meant to stay out of the way so you can focus on being the expert on your child.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          What is Anya?
+          <span class="faq-icon" aria-hidden="true">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke-width="1.5" stroke-linecap="round">
+              <line x1="5" y1="1" x2="5" y2="9"/><line x1="1" y1="5" x2="9" y2="5"/>
+            </svg>
+          </span>
+        </summary>
+        <div class="faq-answer">
+          <img
+            src="/assets/images/faq-q5.png"
+            alt="Anya answers: I'm ANYA — Agentic Narrative-Yielding Architecture. I'm continuity infrastructure. I do three things: today I help you navigate the demands of caring for Sam; across time I preserve what matters; in transitions I carry forward what you know so Sam's continuity doesn't break. I'm not a chatbot. I'm infrastructure built around you and Sam."
+            style="width:100%; max-width:600px; border-radius:12px; border:1px solid var(--color-border); display:block;"
+          />
+          <p class="faq-answer-summary">Anya is continuity infrastructure for parents of children with profound autism, IDD, and complex care needs. It helps with today&#8217;s care demands, preserves what matters over time, and carries forward what you know so your child&#8217;s continuity does not break during transitions.</p>
+        </div>
+      </details>
+
+
+      <!-- ════ SECTION: UNDERSTANDING THE PROBLEM ════ -->
+      <p class="faq-group-label">Understanding the problem</p>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          What happens to my child when I die?
+          <span class="faq-icon" aria-hidden="true">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke-width="1.5" stroke-linecap="round">
+              <line x1="5" y1="1" x2="5" y2="9"/><line x1="1" y1="5" x2="9" y2="5"/>
+            </svg>
+          </span>
+        </summary>
+        <div class="faq-answer">
+          <p>Legally, a Special Needs Trust can protect your child&#8217;s financial future. A guardian or successor trustee can step into their designated roles. The system has mechanisms for this.</p>
+          <p>What the system cannot do is transfer what you know. Your child&#8217;s history, their daily rhythms, what calms them, what frightens them, what they love, how they communicate when they&#8217;re in pain&#8202;&#8212;&#8202;none of that is in any document. None of that transfers automatically.</p>
+          <p>What happens to your child when you die depends on two things: whether the legal plan is in place, and whether the people who are there after you actually know your child. The first is handled by an attorney. The second has never had a reliable answer&#8202;&#8212;&#8202;until now.</p>
+          <p>Anya was built for the second problem. Not as a record system or a planning tool, but as continuity infrastructure: a way to preserve what you know about your child and make it accessible to the people who will need it from day one.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          How will the people who are there after me know my child the way I do?
+          <span class="faq-icon" aria-hidden="true">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke-width="1.5" stroke-linecap="round">
+              <line x1="5" y1="1" x2="5" y2="9"/><line x1="1" y1="5" x2="9" y2="5"/>
+            </svg>
+          </span>
+        </summary>
+        <div class="faq-answer">
+          <p>The honest answer is: they won&#8217;t. Not the way you do. You have spent years&#8202;&#8212;&#8202;decades&#8202;&#8212;&#8202;learning your child. That knowledge is not transferable through a binder, a care plan, or a meeting with a social worker.</p>
+          <p>But there is a difference between someone who knows nothing and someone who has been given everything you know. That difference is the difference between a stranger walking into your child&#8217;s life and someone who arrives already knowing what matters.</p>
+          <p>Parents often ask: &#8220;How do I prepare the people who will be there after me?&#8221; This question is not about paperwork. It is about whether someone will know your child as a person&#8202;&#8212;&#8202;their history, their preferences, their fears, their joys&#8202;&#8212;&#8202;from the first day you are gone.</p>
+          <p>That knowledge lives with you right now. Anya preserves it. Not as a file to be stored, but as something alive&#8202;&#8212;&#8202;built from your words, held in your voice, accessible to the people your child will depend on.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          What is a Special Needs Trust&#8202;&#8212;&#8202;and what doesn&#8217;t it cover?
+          <span class="faq-icon" aria-hidden="true">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke-width="1.5" stroke-linecap="round">
+              <line x1="5" y1="1" x2="5" y2="9"/><line x1="1" y1="5" x2="9" y2="5"/>
+            </svg>
+          </span>
+        </summary>
+        <div class="faq-answer">
+          <p>A Special Needs Trust is a legal structure that holds assets for a person with a disability without disqualifying them from government benefits like SSI and Medi-Cal. It is one of the most important tools in a special needs plan&#8202;&#8212;&#8202;and one of the most misunderstood.</p>
+          <p>What it covers: financial assets, benefit protection, designated trustees, and instructions for how funds may be used.</p>
+          <p>What it does not cover: who your child is. A Special Needs Trust cannot tell a trustee that your child needs twenty minutes to transition between activities, that they are terrified of certain sounds, that their face changes before a seizure, or that they have a sense of humor that surprises everyone who takes the time to see it.</p>
+          <p>The Trust protects your child&#8217;s financial future. It does not protect the knowledge that makes your child&#8217;s life worth living&#8202;&#8212;&#8202;the knowledge only you carry.</p>
+          <p>That is the problem Anya was built to solve.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          What should I be writing down about my child that no document asks for?
+          <span class="faq-icon" aria-hidden="true">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke-width="1.5" stroke-linecap="round">
+              <line x1="5" y1="1" x2="5" y2="9"/><line x1="1" y1="5" x2="9" y2="5"/>
+            </svg>
+          </span>
+        </summary>
+        <div class="faq-answer">
+          <p>Most documents ask for diagnoses, medications, emergency contacts, and legal designations. That information matters. It is also the smallest part of what the people who are there after you will need to know.</p>
+          <p>What no document asks for: what your child&#8217;s face looks like when they&#8217;re in pain and can&#8217;t say so. What time of day they&#8217;re most themselves. What they&#8217;ve been working toward for the last two years. What they lost that they&#8217;ve never stopped grieving. What makes them laugh. What they&#8217;re proud of.</p>
+          <p>This is not supplementary information. For a child who cannot fully speak for themselves, this knowledge is the difference between someone who is present in their life and someone who is just managing it.</p>
+          <p>You already know all of it. You have been paying attention for years. The question is whether that attention survives you&#8202;&#8212;&#8202;and whether it reaches the people who will need it.</p>
+          <p>Anya is built for exactly this.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          My child can&#8217;t speak for themselves. How do I make sure that&#8217;s understood after I&#8217;m gone?
+          <span class="faq-icon" aria-hidden="true">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke-width="1.5" stroke-linecap="round">
+              <line x1="5" y1="1" x2="5" y2="9"/><line x1="1" y1="5" x2="9" y2="5"/>
+            </svg>
+          </span>
+        </summary>
+        <div class="faq-answer">
+          <p>This is the fear underneath every other fear. Not just &#8220;who will be there&#8221;&#8202;&#8212;&#8202;but whether that person will understand what your child cannot tell them directly.</p>
+          <p>A diagnosis tells someone what your child has. It does not tell them who your child is. A behavior support plan tells someone what to do in certain situations. It does not tell them what your child was like the first time they heard music they loved, or how they show trust, or what their silence means.</p>
+          <p>For a child who cannot fully advocate for themselves, the people who are there after you are not just providers. They are interpreters. And they can only interpret what they have been taught.</p>
+          <p>You are the only teacher. Anya holds what you teach&#8202;&#8212;&#8202;not as a document, but as something the people who come after you can actually use.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          What is life continuity infrastructure for a child with IDD?
+          <span class="faq-icon" aria-hidden="true">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke-width="1.5" stroke-linecap="round">
+              <line x1="5" y1="1" x2="5" y2="9"/><line x1="1" y1="5" x2="9" y2="5"/>
+            </svg>
+          </span>
+        </summary>
+        <div class="faq-answer">
+          <p>It is the systems and knowledge that ensure a person&#8217;s life continues&#8202;&#8212;&#8202;with dignity, with consistency, and with the understanding of who they are&#8202;&#8212;&#8202;when the primary person who has held that knowledge is no longer able to do so.</p>
+          <p>For a child with intellectual and developmental disabilities, life continuity is not automatic. It requires that someone carry forward what a parent knows: the history, the relationships, the preferences, the communication patterns, the hard-won understanding that took years to build.</p>
+          <p>A Special Needs Trust is financial continuity infrastructure. A guardianship is legal continuity infrastructure. Neither addresses the knowledge continuity problem&#8202;&#8212;&#8202;the gap between what a parent knows about their child and what the people who are there after them will need to know.</p>
+          <p>Anya is knowledge continuity infrastructure. It was built by Michael Pearce&#8202;&#8212;&#8202;30 years as a special needs attorney in Sacramento County&#8202;&#8212;&#8202;because he watched that gap swallow family after family, and because the legal tools he had were never designed to close it.</p>
+        </div>
+      </details>
+
+      <!-- ─── FAQ FOOTER ─── -->
+      <div class="faq-footer">
+        <p class="faq-footer-text">
+          More questions? <a class="faq-footer-link" href="https://app.vestlife.com" target="_blank" rel="noopener noreferrer">Start a conversation with Anya.</a>
+        </p>
+      </div>
+
+    </div><!-- /faq-section -->
+  </main>
+
+  <!-- ─── PAGE FOOTER ─── -->
+  <footer class="footer">
+    <p class="footer-legal-text">
+      <a href="/terms" class="footer-legal-link footer-legal-link--button">Terms of Service</a> &nbsp;·&nbsp; <a href="/privacy" class="footer-legal-link">Privacy Policy</a> &nbsp;·&nbsp; © 2026 Tenerra.ai · Vest Life, Inc.
+    </p>
+    <p class="footer-signin-note">Already using Anya? <a href="https://app.vestlife.com" target="_blank" rel="noopener noreferrer" class="footer-signin-link">Sign in</a></p>
+  </footer>
+
+  <script>
+    /* Progressive enhancement — details/summary already work natively,
+       this just ensures the open/close icon animates correctly cross-browser */
+    document.querySelectorAll('.faq-item').forEach(function(item) {
+      item.addEventListener('toggle', function() {
+        /* icon rotation handled entirely by CSS details[open] selector */
+      });
+    });
+  </script>
+
+</div><!-- /page-wrap -->
+  <!-- ── Cookie Consent Banner ── -->
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <span>This site uses analytics cookies to improve how we reach families. <a href="/privacy">Learn more</a></span>
+    <div class="cookie-banner-actions">
+      <button onclick="setConsent('denied')" class="cookie-btn cookie-btn-decline">Decline</button>
+      <button onclick="setConsent('granted')" class="cookie-btn cookie-btn-accept">Accept cookies</button>
+    </div>
+  </div>
+  <script>
+    /* ── GA Consent Management ── */
+    (function () {
+      var GA_ID = 'G-26WJ4LRG87';
+      function loadGA() {
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+        document.head.appendChild(s);
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        window.gtag = gtag;
+        gtag('js', new Date());
+        gtag('config', GA_ID);
+      }
+      window.setConsent = function (choice) {
+        try { localStorage.setItem('ga_consent', choice); } catch (e) {}
+        var banner = document.getElementById('cookie-banner');
+        if (banner) banner.style.display = 'none';
+        if (choice === 'granted') loadGA();
+      };
+      var consent;
+      try { consent = localStorage.getItem('ga_consent'); } catch (e) {}
+      if (consent === 'granted') {
+        loadGA();
+      } else if (!consent) {
+        var banner = document.getElementById('cookie-banner');
+        if (banner) banner.style.display = 'flex';
+      }
+    })();
+  </script>
+
+  <script>
+    /* ─── MORE DROPDOWN ─── */
+    document.addEventListener('DOMContentLoaded', function () {
+      var moreTrigger = document.querySelector('.nav-more-trigger');
+      var moreMenu    = document.getElementById('more-menu');
+      if (!moreTrigger || !moreMenu) return;
+      function openMore()  { moreTrigger.setAttribute('aria-expanded', 'true');  moreMenu.style.display = 'block'; }
+      function closeMore() { moreTrigger.setAttribute('aria-expanded', 'false'); moreMenu.style.display = ''; }
+      function isMoreOpen() { return moreTrigger.getAttribute('aria-expanded') === 'true'; }
+      moreTrigger.addEventListener('click', function (e) { e.stopPropagation(); isMoreOpen() ? closeMore() : openMore(); });
+      document.addEventListener('click', function (e) { if (!moreMenu.contains(e.target) && e.target !== moreTrigger) closeMore(); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && isMoreOpen()) { closeMore(); moreTrigger.focus(); } });
+    });
+    /* ─── NAV HAMBURGER ─── */
+    document.addEventListener('DOMContentLoaded', function () {
+      var btn   = document.querySelector('.nav-hamburger');
+      var mMenu = document.getElementById('mobileMenu');
+      if (!btn || !mMenu) return;
+      function openMenu()  { mMenu.classList.add('open'); btn.setAttribute('aria-expanded', 'true'); document.body.style.overflow = 'hidden'; }
+      function closeMenu() { mMenu.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); document.body.style.overflow = ''; }
+      function isOpen() { return mMenu.classList.contains('open'); }
+      btn.setAttribute('aria-expanded', 'false');
+      btn.setAttribute('aria-controls', 'mobileMenu');
+      btn.addEventListener('click', function (e) { e.stopPropagation(); isOpen() ? closeMenu() : openMenu(); });
+      mMenu.querySelectorAll('a').forEach(function (link) { link.addEventListener('click', closeMenu); });
+      document.addEventListener('click', function (e) { if (!mMenu.contains(e.target) && e.target !== btn) closeMenu(); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && isOpen()) { closeMenu(); btn.focus(); } });
+    });
+  </script>
+</body>
+</html>
