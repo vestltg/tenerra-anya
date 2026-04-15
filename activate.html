@@ -61,10 +61,18 @@
     }
     .activate-features li {
       display: flex;
-      gap: 12px;
-      align-items: flex-start;
-      padding: 12px 0;
+      flex-direction: column;
+      gap: 4px;
+      padding: 14px 0;
       border-bottom: 1px solid var(--color-border);
+    }
+    .activate-features li strong {
+      font-size: 15px;
+      color: #111;
+    }
+    .activate-features li span {
+      font-size: 15px;
+      color: var(--color-text-secondary);
       line-height: 1.5;
     }
     .activate-cta {
@@ -80,13 +88,6 @@
     }
     .activate-features li:last-child {
       border-bottom: none;
-    }
-    .activate-features li::before {
-      content: "→";
-      color: var(--color-primary);
-      font-weight: 600;
-      flex-shrink: 0;
-      margin-top: 2px;
     }
   </style>
 </head>
@@ -156,9 +157,9 @@
         <p>Once you're in, you can start exploring everything Anya can do.</p>
 
         <ul class="activate-features">
-          <li><strong>Conversations</strong> — Tell Anya anything about your child, any time. She holds it.</li>
-          <li><strong>Key Events</strong> — Track what matters across your child's life, from milestones to medical history.</li>
-          <li><strong>Memories &amp; Thoughts</strong> — Anya uses these to understand your child more deeply over time, so nothing important is ever lost.</li>
+          <li><strong>Conversations</strong><span>Tell Anya anything about your child, any time. She holds it.</span></li>
+          <li><strong>Key Events</strong><span>Track what matters across your child's life, from milestones to medical history.</span></li>
+          <li><strong>Memories &amp; Thoughts</strong><span>Anya uses these to understand your child more deeply over time, so nothing important is ever lost.</span></li>
         </ul>
 
         <p class="activate-support-note">
