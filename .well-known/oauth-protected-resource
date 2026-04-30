@@ -1,8 +1,9 @@
 {
-  "resource": "https://anya.tenerra.ai/api",
+  "resource": "https://app.vestlife.com/api",
   "authorization_servers": [
-    "https://anya.tenerra.ai"
+    "https://app.vestlife.com"
   ],
+  "service_note": "This metadata describes app.vestlife.com APIs; anya.tenerra.ai marketing pages are public.",
   "scopes_supported": [
     "anya.read",
     "anya.write"
