@@ -1,0 +1,13 @@
+{
+  "resource": "https://anya.tenerra.ai/api",
+  "authorization_servers": [
+    "https://anya.tenerra.ai"
+  ],
+  "scopes_supported": [
+    "anya.read",
+    "anya.write"
+  ],
+  "bearer_methods_supported": [
+    "header"
+  ]
+}

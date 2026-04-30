@@ -4,3 +4,18 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
   X-XSS-Protection: 1; mode=block
+
+/
+  Link: </.well-known/api-catalog>; rel="api-catalog"
+  Link: </api/openapi.json>; rel="service-desc"
+  Link: </docs/api>; rel="service-doc"
+  Link: </api/status.json>; rel="status"
+
+/.well-known/api-catalog
+  Content-Type: application/linkset+json; charset=utf-8
+
+/.well-known/openid-configuration
+  Content-Type: application/json; charset=utf-8
+
+/.well-known/oauth-protected-resource
+  Content-Type: application/json; charset=utf-8

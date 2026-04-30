@@ -1,0 +1,15 @@
+{
+  "serverInfo": {
+    "name": "anya-site-tools",
+    "version": "1.0.0"
+  },
+  "transports": [
+    {
+      "type": "webmcp",
+      "url": "https://anya.tenerra.ai/"
+    }
+  ],
+  "capabilities": {
+    "tools": true
+  }
+}

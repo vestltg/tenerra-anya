@@ -1,0 +1,8 @@
+{
+  "name": "open_app",
+  "description": "Opens the Anya app sign-in page in a new browser tab.",
+  "input_schema": {
+    "type": "object",
+    "properties": {}
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Anya Public API",
+    "version": "1.0.0",
+    "description": "Discovery document for agent-accessible Anya API metadata."
+  },
+  "servers": [
+    {
+      "url": "https://anya.tenerra.ai/api"
+    }
+  ],
+  "paths": {
+    "/status.json": {
+      "get": {
+        "summary": "API status",
+        "responses": {
+          "200": {
+            "description": "Service status"
+          }
+        }
+      }
+    }
+  }
+}

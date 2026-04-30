@@ -1,0 +1,16 @@
+{
+  "name": "site_search",
+  "description": "Searches key Anya marketing pages and returns matching sections.",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "query": {
+        "type": "string",
+        "description": "Text to find in visible page content."
+      }
+    },
+    "required": [
+      "query"
+    ]
+  }
+}
