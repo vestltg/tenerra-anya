@@ -3748,7 +3748,7 @@
               properties: {}
             },
             execute: async function () {
-              var popup = window.open('https://app.vestlife.com', '_blank', 'noopener=yes,noreferrer=yes');
+              var popup = window.open('https://app.vestlife.com', '_blank', 'noopener,noreferrer');
               return { opened: !!popup, url: 'https://app.vestlife.com' };
             }
           },

@@ -18,7 +18,7 @@ function htmlToMarkdown(html) {
     .trim();
 }
 
-function estimateWordCount(markdown) {
+function estimateTokenCount(markdown) {
   if (!markdown) return "0";
   return String(markdown.split(/\s+/).filter(Boolean).length);
 }
@@ -38,7 +38,7 @@ export async function onRequest(context) {
     const headers = new Headers(response.headers);
     headers.set("content-type", "text/markdown; charset=utf-8");
     headers.set("vary", "Accept");
-    headers.set("x-markdown-tokens", estimateWordCount(markdown));
+    headers.set("x-markdown-tokens", estimateTokenCount(markdown));
 
     return new Response(request.method === "HEAD" ? null : markdown, {
       status: response.status,
