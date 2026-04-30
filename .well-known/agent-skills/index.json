@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agentskills.io/schemas/agent-skills-index.v0.2.0.json",
+  "skills": [
+    {
+      "name": "site_search",
+      "type": "tool",
+      "description": "Searches visible content on key Anya marketing pages.",
+      "url": "https://anya.tenerra.ai/.well-known/agent-skills/site-search.json",
+      "sha256": "b9fbce1676ef5e01ce0f7db01a303c7b90addeca56ee5f44ac4098f0ca370fdd"
+    },
+    {
+      "name": "open_app",
+      "type": "tool",
+      "description": "Opens the Anya app sign-in page.",
+      "url": "https://anya.tenerra.ai/.well-known/agent-skills/open-app.json",
+      "sha256": "374842a7e1514fc07904417eec8f900a1284a2558a0276f9a8579a08c55c1067"
+    }
+  ]
+}

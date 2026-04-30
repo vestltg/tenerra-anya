@@ -3734,6 +3734,47 @@
       }
     })();
   </script>
+  <script>
+    (function () {
+      if (!navigator.modelContext || typeof navigator.modelContext.provideContext !== 'function') return;
+
+      navigator.modelContext.provideContext({
+        tools: [
+          {
+            name: 'open_app',
+            description: 'Open the Anya app sign-in page.',
+            inputSchema: {
+              type: 'object',
+              properties: {}
+            },
+            execute: async function () {
+              var popup = window.open('https://app.vestlife.com', '_blank', 'noopener,noreferrer');
+              return { opened: !!popup, url: 'https://app.vestlife.com' };
+            }
+          },
+          {
+            name: 'site_search',
+            description: 'Find matching text on this page and return snippets.',
+            inputSchema: {
+              type: 'object',
+              properties: {
+                query: { type: 'string' }
+              },
+              required: ['query']
+            },
+            execute: async function (input) {
+              var query = (input && input.query ? String(input.query) : '').trim().toLowerCase();
+              if (!query) return { matches: [] };
+              var text = document.body ? document.body.innerText : '';
+              var lines = text.split('\n').map(function (line) { return line.trim(); }).filter(Boolean);
+              var matches = lines.filter(function (line) { return line.toLowerCase().indexOf(query) !== -1; }).slice(0, 5);
+              return { matches: matches };
+            }
+          }
+        ]
+      });
+    })();
+  </script>
 
 </body>
 </html>

@@ -1,0 +1,25 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://anya.tenerra.ai/api",
+      "service-desc": [
+        {
+          "href": "https://anya.tenerra.ai/api/openapi.json",
+          "type": "application/vnd.oai.openapi+json;version=3.0"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://anya.tenerra.ai/docs/api",
+          "type": "text/html"
+        }
+      ],
+      "status": [
+        {
+          "href": "https://anya.tenerra.ai/api/status.json",
+          "type": "application/json"
+        }
+      ]
+    }
+  ]
+}
