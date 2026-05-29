@@ -54,6 +54,11 @@ When adding a new public page:
 1. Create the `.html` file at the repo root.
 2. Link to the extensionless public path in nav/footer content.
 3. Update `sitemap.xml` if the page should be indexed.
+4. Add it to the "Key Pages" list in `llms.txt`.
+5. Resolve any `#` nav/footer placeholder that was standing in for it.
+6. Update JSON-LD / `FAQPage` if the page changes what Anya offers or answers.
+
+When removing or renaming a page, reverse all six — and remove any now-orphaned `llms.txt` entries or JSON-LD nodes so structured data still matches the live pages.
 
 ## GEO / SEO Expectations
 
