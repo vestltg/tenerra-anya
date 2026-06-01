@@ -113,6 +113,7 @@ knowledge that exists nowhere else.
 
 - [Home](https://anya.tenerra.ai/)
 - [About](https://anya.tenerra.ai/about)
+- [Insights](https://anya.tenerra.ai/insights)
 - [FAQs](https://anya.tenerra.ai/faqs)
 - [Terms of Service](https://anya.tenerra.ai/terms)
 - [Privacy Policy](https://anya.tenerra.ai/privacy)
