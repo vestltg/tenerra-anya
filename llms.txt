@@ -109,6 +109,28 @@ knowledge that exists nowhere else.
 - Approximately $16.60/month equivalent
 - Cancel inside the app before day 7 at no charge
 
+## Insights
+
+The Insights page (`/insights`, "Teaching Anya") is a set of five short narrative
+essays by founder Michael Pearce about the lived experience of special needs parents —
+the realities shared with Anya to help her understand the people she is built for.
+The stories are composites drawn from three decades of practice; names and details are
+changed, the patterns are real.
+
+1. **The Knowledge That Lives in You** — the detailed, hard-won understanding a parent
+   builds about their child that no IEP, chart, or file fully captures.
+2. **Always Running** — the constant mental load of being the system: the running list
+   of a child's needs that no one ever asks to see.
+3. **A Life Is Not a List** — why legal and estate-planning documents protect a child's
+   assets but cannot transfer what a parent knows.
+4. **The Room** — how observation gets mistaken for understanding when outsiders judge a
+   family without asking what they have built.
+5. **Who Will Know?** — a parent's fear that if they are gone, the knowing disappears with
+   them, even when care continues.
+
+These pieces illustrate the core problem Anya solves: parent knowledge that exists
+nowhere but in the parent, and what is lost when it is never made transferable.
+
 ## Key Pages
 
 - [Home](https://anya.tenerra.ai/)
