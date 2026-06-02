@@ -3166,9 +3166,6 @@
   </footer>
   </div>
   <script>
-    /* ─── JS ENABLED FLAG ─── */
-    document.body.classList.add('js-enabled');
-
     /* ─── MORE DROPDOWN ─── */
     document.addEventListener('DOMContentLoaded', function () {
       var moreTrigger = document.querySelector('.nav-more-trigger');
@@ -3191,96 +3188,6 @@
 
       document.addEventListener('keydown', function (e) {
         if (e.key === 'Escape' && isMoreOpen()) { closeMore(); moreTrigger.focus(); }
-      });
-    });
-
-    /* ─── MORE DROPDOWN ─── */
-    document.addEventListener('DOMContentLoaded', function () {
-      var moreTrigger = document.querySelector('.nav-more-trigger');
-      var moreMenu    = document.getElementById('more-menu');
-
-      if (!moreTrigger || !moreMenu) return;
-
-      function openMore()  { moreTrigger.setAttribute('aria-expanded', 'true');  moreMenu.style.display = 'block'; }
-      function closeMore() { moreTrigger.setAttribute('aria-expanded', 'false'); moreMenu.style.display = ''; }
-      function isMoreOpen() { return moreTrigger.getAttribute('aria-expanded') === 'true'; }
-
-      moreTrigger.addEventListener('click', function (e) {
-        e.stopPropagation();
-        isMoreOpen() ? closeMore() : openMore();
-      });
-
-      document.addEventListener('click', function (e) {
-        if (!moreMenu.contains(e.target) && e.target !== moreTrigger) closeMore();
-      });
-
-      document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape' && isMoreOpen()) { closeMore(); moreTrigger.focus(); }
-      });
-    });
-
-    /* ─── NAV DROPDOWN (click-driven only, no hover) ─── */
-    document.addEventListener('DOMContentLoaded', function () {
-      var trigger = document.querySelector('.nav-dropdown-trigger');
-      var menu    = document.getElementById('about-menu');
-
-      if (!trigger || !menu) return;
-
-      function openDropdown() {
-        trigger.setAttribute('aria-expanded', 'true');
-        menu.style.display = 'block';
-      }
-      function closeDropdown() {
-        trigger.setAttribute('aria-expanded', 'false');
-        menu.style.display = '';
-      }
-      function isDropdownOpen() {
-        return trigger.getAttribute('aria-expanded') === 'true';
-      }
-
-      trigger.addEventListener('click', function (e) {
-        e.stopPropagation();
-        isDropdownOpen() ? closeDropdown() : openDropdown();
-      });
-
-      document.addEventListener('click', function (e) {
-        if (!menu.contains(e.target) && e.target !== trigger) closeDropdown();
-      });
-
-      document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape' && isDropdownOpen()) {
-          closeDropdown();
-          trigger.focus();
-        }
-      });
-    });
-
-    /* ─── LEARN DROPDOWN ─── */
-    document.addEventListener('DOMContentLoaded', function () {
-      var triggers = document.querySelectorAll('.nav-dropdown-trigger');
-      var learnTrigger = null;
-      triggers.forEach(function(t) {
-        if (t.getAttribute('aria-controls') === 'learn-menu') learnTrigger = t;
-      });
-      var learnMenu = document.getElementById('learn-menu');
-
-      if (!learnTrigger || !learnMenu) return;
-
-      function openLearn() { learnTrigger.setAttribute('aria-expanded', 'true'); learnMenu.style.display = 'block'; }
-      function closeLearn() { learnTrigger.setAttribute('aria-expanded', 'false'); learnMenu.style.display = ''; }
-      function isLearnOpen() { return learnTrigger.getAttribute('aria-expanded') === 'true'; }
-
-      learnTrigger.addEventListener('click', function (e) {
-        e.stopPropagation();
-        isLearnOpen() ? closeLearn() : openLearn();
-      });
-
-      document.addEventListener('click', function (e) {
-        if (!learnMenu.contains(e.target) && e.target !== learnTrigger) closeLearn();
-      });
-
-      document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape' && isLearnOpen()) { closeLearn(); learnTrigger.focus(); }
       });
     });
 
@@ -3325,32 +3232,6 @@
         if (e.key === 'Escape' && isOpen()) { closeMenu(); btn.focus(); }
       });
     });
-
-    document.addEventListener('DOMContentLoaded', function () {
-      var panels = (typeof panels !== 'undefined') ? panels : [];
-      var observer = new IntersectionObserver(
-        function (entries) {
-          entries.forEach(function (entry) {
-            if (!entry.isIntersecting) return;
-            var id    = entry.target.id;
-            var match = panels.find(function (p) { return p.panel === id; });
-            if (!match) return;
-            var response = document.getElementById(match.response);
-            if (!response) return;
-            setTimeout(function () {
-              response.classList.add('visible');
-            }, 600);
-            observer.unobserve(entry.target);
-          });
-        },
-        { threshold: 0.2 }
-      );
-
-      panels.forEach(function (p) {
-        var el = document.getElementById(p.panel);
-        if (el) observer.observe(el);
-      });
-    });
   </script>
 
   <script>
@@ -3370,28 +3251,6 @@
       );
 
       observer.observe(cta);
-    })();
-  </script>
-
-  <script>
-    /* ─── GENERAL FADE-IN SCROLL REVEAL ─── */
-    (function () {
-      var fadeEls = document.querySelectorAll('.fade-in');
-      if (!fadeEls.length) return;
-
-      var observer = new IntersectionObserver(
-        function (entries) {
-          entries.forEach(function (entry) {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('visible');
-              observer.unobserve(entry.target);
-            }
-          });
-        },
-        { threshold: 0.15 }
-      );
-
-      fadeEls.forEach(function (el) { observer.observe(el); });
     })();
   </script>
 
@@ -3533,51 +3392,6 @@
           addBtn.click();
         }
       });
-
-      /* ─── CTA SEQUENCE: reveal after response settles ─── */
-      var ctaSeq  = document.getElementById('ctaSequence');
-      var copyBtn = document.getElementById('copyButton');
-
-      // Reveal timing wired into the submit handler via bridge variable
-      // (bridge now points to ctaSeq)
-
-      if (copyBtn) {
-        copyBtn.addEventListener('click', function () {
-          var text = input.value.trim();
-          if (!text) return;
-
-          // Copy to clipboard
-          if (navigator.clipboard && navigator.clipboard.writeText) {
-            navigator.clipboard.writeText(text).then(function () {
-              copyBtn.textContent = 'Copied';
-              setTimeout(function () {
-                copyBtn.textContent = 'Copy my thought';
-              }, 2000);
-            }).catch(function () {
-              // Fallback for older browsers
-              fallbackCopy(text);
-            });
-          } else {
-            fallbackCopy(text);
-          }
-        });
-      }
-
-      function fallbackCopy(text) {
-        var ta = document.createElement('textarea');
-        ta.value = text;
-        ta.style.position = 'fixed';
-        ta.style.opacity = '0';
-        document.body.appendChild(ta);
-        ta.focus();
-        ta.select();
-        try { document.execCommand('copy'); } catch (e) {}
-        document.body.removeChild(ta);
-        if (copyBtn) {
-          copyBtn.textContent = 'Copied';
-          setTimeout(function () { copyBtn.textContent = 'Copy my thought'; }, 2000);
-        }
-      }
 
     })();
   </script>
