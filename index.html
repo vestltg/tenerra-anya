@@ -42,40 +42,12 @@
     .section-headline,
     .section-subhead,
     .section-eyebrow,
-    .hero-tagline,
-    .hero-descriptor,
     .anya-name,
-    .action-headline,
-    .action-subhead,
-    .action-closing,
-    .begin-headline,
-    .begin-close,
-    .begin-step-text,
-    .never-headline,
-    .never-body,
-    .never-close,
     .card-title,
     .card-body,
     .moment-title,
     .moment-body,
-    .msb-title,
-    .msb-body,
-    .msb-bridge-headline,
-    .msb-bridge-body,
-    .vestiq-intro-headline,
-    .vestiq-intro-line,
-    .vest-footer-text,
-    .privacy-text,
-    .founder-text,
-    .demo-footer-text,
-    .faq-footer-text,
-    .vd-main-title,
-    .vd-pocket-name,
-    .vd-pocket-desc,
-    .social-proof-text,
-    .not-every-child-headline,
-    .not-every-child-body,
-    .not-every-child-close {
+    .privacy-text {
       text-wrap: balance;
     }
 
@@ -201,10 +173,8 @@
       }
       .hero { padding: 6rem 1.5rem 2.75rem; }
       .section { padding: 36px 20px; }
-      .grid-3, .grid-2, .grid-standard, .grid-emphasis { grid-template-columns: 1fr; }
-      .hero::before { width: 360px; height: 360px; }
-      .hero-cta { padding: 0.6rem 1.5rem; font-size: 0.825rem; }
-    }/* ─── HERO HEADLINE (recognition-first) ─── */
+    }
+    /* ─── HERO HEADLINE (recognition-first) ─── */
 
     .hero-headline {
       font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -444,8 +414,7 @@
       text-align: left;
     }
 
-    .moment-card:first-child,
-    .msb-card:first-child {
+    .moment-card:first-child {
       padding: 28px;
       border-color: var(--color-border);
     }
@@ -477,46 +446,26 @@
       font-weight: 400;
       color: #333;
       line-height: 1.6;
-    }/* ─── VEST DASHBOARD ─── */
-/* Sidebar */
-/* Main */
+    }
 
     /* ─── CARD HOVER SYSTEM ─── */
-    .moment-card,
-    .msb-card,
-    .vd-pocket-card {
+    .moment-card {
       transition: transform 0.2s ease,
                   box-shadow 0.2s ease,
                   border-color 0.2s ease;
     }
 
-    .moment-card:hover,
-    .msb-card:hover,
-    .vd-pocket-card:hover {
+    .moment-card:hover {
       box-shadow: 0 2px 8px rgba(0,0,0,0.04);
       border-color: #ddd;
     }
 
-    .moment-card:first-child:hover,
-    .msb-card:first-child:hover {
+    .moment-card:first-child:hover {
       box-shadow: 0 2px 8px rgba(0,0,0,0.04);
       border-color: #ddd;
     }
 
-    @media (max-width: 900px) {
-      .vest-dashboard { grid-template-columns: 1fr; }
-      .vd-sidebar { display: none; }
-      .vd-pockets-grid { grid-template-columns: repeat(2, 1fr); }
-    }
-
-    @media (max-width: 640px) {
-      .vd-pockets-grid { grid-template-columns: 1fr 1fr; gap: 0.75rem; }
-    }/* ─── MEMORY SOUL BRAIN ─── */
-
-    @media (max-width: 640px) {
-      .msb-grid { grid-template-columns: 1fr; }
-    }/* ─── HONESTY ─── */
-
+    /* ─── HONESTY ─── */
     .card-eyebrow { font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: #8256F7; margin-bottom: 8px; }
     .card-title { font-family: inherit; font-size: clamp(1.05rem, 2vw, 1.25rem); font-weight: 600; color: #1a1a1a; line-height: 1.3; margin-bottom: 12px; }
     .card-body { font-size: 16px; font-weight: 400; color: #333; line-height: 1.6; text-align: left; margin-bottom: 10px; }
@@ -547,16 +496,11 @@
 
     @media (max-width: 640px) {
       .vest-moments { grid-template-columns: 1fr; }
-      .mock-body { grid-template-columns: 1fr; }
-      .mock-sidebar { display: none; }
-      .honesty-grid { grid-template-columns: 1fr; }
-      .honesty-card { border-right: none !important; border-bottom: 1px solid var(--color-border) !important; }
-      .honesty-card:last-child { border-bottom: none !important; }
     }
 
     /* ── Accessibility & polish additions ── */
 
-    /* Diff 1 companion: visually-hidden utility */
+    /* visually-hidden utility */
     .visually-hidden {
       position: absolute;
       width: 1px;
@@ -567,23 +511,21 @@
       clip: rect(0,0,0,0);
       white-space: nowrap;
       border: 0;
-    }/* Diff 2 companion: nav dropdown trigger button resets to match anchor style */
+    }
 
-    /* Diff 7: focus-visible states */
+    /* focus-visible states */
     a:focus-visible,
-    button:focus-visible,
-    .nav-dropdown-trigger:focus-visible {
+    button:focus-visible {
       outline: 2px solid rgba(130,86,247,0.5);
       outline-offset: 2px;
       border-radius: 3px;
     }
-    .hero-cta:focus-visible,
     .nav-cta:focus-visible {
       outline: 2px solid #8256F7;
       outline-offset: 3px;
     }
 
-    /* Diff 8: reduced-motion support */
+    /* reduced-motion support */
     @media (prefers-reduced-motion: reduce) {
       *,
       *::before,
@@ -593,18 +535,11 @@
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
       }
-    }/* Diff 9: animation delay utility classes (replaces inline style attrs) */
-/* ─── SECTION KICKER ─── */
-/* ─── CLOSING LINE ─── */
-/* ─── ANYA FILES ─── */
+    }
 
     @media (max-width: 640px) {
-      .anya-files-list,
-      .anya-files-anya-list { max-width: 100%; }
-      .anya-files-trust { padding: 1.5rem 1.5rem; }
-      .moment-card:first-child,
-      .msb-card:first-child { transform: none; }
-    }/* ─── ORIGINS ─── */
+      .moment-card:first-child { transform: none; }
+    }
 
     /* ─── CTA SECTION ─── */
     /* ─── CTA SECTION — scroll reveal ─── */
@@ -972,21 +907,7 @@
         gap: 1rem !important;
       }
 
-      /* ── DASHBOARD TRANSITION COPY ── */
-      .vest-dashboard-lead {
-        font-size: 16px !important;
-      }
-
-      /* ── ONE PARENT / ONE CHILD ── */
-      .not-every-child-section {
-        padding: 40px 24px 56px !important;
-      }
-      .not-every-child-body {
-        font-size: 15px !important;
-        line-height: 1.7 !important;
-      }
-
-      /* ── SILO & VEST KEEPER subheads ── */
+      /* ── SECTION SUBHEADS ── */
       .section .section-subhead {
         font-size: 15px !important;
         line-height: 1.65 !important;
@@ -1001,12 +922,6 @@
       .card-body {
         font-size: 15px !important;
         line-height: 1.55 !important;
-      }
-
-      /* ── PRICING CARD: trial timeline labels ── */
-      .pricing-trial-label {
-        min-width: 44px !important;
-        font-size: 10px !important;
       }
 
       /* ── BUTTONS ── */
@@ -1040,29 +955,11 @@
         line-height: 1.6 !important;
       }
 
-      /* pricing: stack trial labels above text on very small screens */
-      .pricing-trial-row {
-        flex-direction: column !important;
-        gap: 0.25rem !important;
-      }
-
-      .pricing-trial-label {
-        flex: 0 0 auto !important;
-        min-width: 0 !important;
-        margin-top: 0 !important;
-      }
-
-      /* silo section — reduce bottom margins on paragraphs */
+      /* reduce bottom margins on subhead paragraphs */
       .section-subhead[style*="margin-bottom:1.5rem"] {
         margin-bottom: 1rem !important;
       }
 
-    }/* ======================================== */
-
-    @media (max-width: 640px) {
-      .not-every-child-section {
-        padding: 40px 20px 64px;
-      }
     }
 
     /* ─── VIGNETTE ─── */
