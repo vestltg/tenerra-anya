@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teaching Anya — Insights for Special Needs Parents</title>
+  <meta name="description" content="Realities we shared with Anya to help her learn about parents who carry something extraordinary — and rarely hear it named." />
+  <meta name="keywords" content="special needs parents, IDD, parent knowledge, caregiving, special needs caregiver stories, Anya, Tenerra.ai" />
+  <meta name="theme-color" content="#8256F7" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Michael Pearce" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Teaching Anya — Insights for Special Needs Parents" />
+  <meta property="og:description" content="Realities we shared with Anya to help her learn about parents who carry something extraordinary — and rarely hear it named." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://anya.tenerra.ai/insights" />
+  <meta property="og:image" content="https://anya.tenerra.ai/assets/images/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Anya — What you know about your child, ready when it matters" />
+  <meta property="og:site_name" content="Tenerra.ai" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="article:author" content="Michael Pearce" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Teaching Anya — Insights for Special Needs Parents" />
+  <meta name="twitter:description" content="Realities we shared with Anya to help her learn about parents who carry something extraordinary — and rarely hear it named." />
+  <meta name="twitter:image" content="https://anya.tenerra.ai/assets/images/og-image.jpg" />
+
+  <link rel="canonical" href="https://anya.tenerra.ai/insights" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=DM+Serif+Display:ital@0;1&amp;family=Montserrat:wght@400;500;600&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/shared.css" />
+
+  <style>
+    /* ─── PAGE HEADER ─── */
+    .page-header { max-width: 640px; margin: 0 auto; padding: 120px 20px 40px; text-align: center; }
+    .page-header h1 { font-family: 'DM Serif Display', Georgia, serif; font-size: 38px; font-weight: 400; color: #111; line-height: 1.2; margin-bottom: 12px; }
+
+    /* ─── FOREWORD ─── */
+    .insights-foreword { max-width: 640px; margin: 0 auto; padding: 0 20px 40px; text-align: center; }
+    .insights-foreword p {
+      font-family: 'DM Serif Display', Georgia, serif; font-size: 19px; font-weight: 400;
+      font-style: italic; color: #555; line-height: 1.55;
+    }
+
+    /* ─── TABLE OF CONTENTS ─── */
+    .insights-toc { max-width: 640px; margin: 0 auto; padding: 0 20px 20px; }
+    .insights-toc ol { list-style: none; padding: 24px 0; margin: 0; border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); }
+    .insights-toc li { margin-bottom: 10px; }
+    .insights-toc li:last-child { margin-bottom: 0; }
+    .insights-toc a { display: flex; align-items: baseline; gap: 12px; text-decoration: none; transition: color 0.2s; }
+    .insights-toc a:hover .toc-title { color: var(--color-primary); }
+    .toc-num { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; color: var(--color-primary); opacity: 0.6; flex-shrink: 0; width: 20px; }
+    .toc-title { font-family: 'DM Serif Display', Georgia, serif; font-size: 18px; font-weight: 400; color: #222; line-height: 1.35; transition: color 0.2s; }
+
+    /* ─── ARTICLES ─── */
+    .insights-container { max-width: 640px; margin: 0 auto; padding: 0 20px 100px; }
+    .insight-article { padding: 64px 0; border-bottom: 1px solid var(--color-border); scroll-margin-top: 80px; }
+    .insight-article:last-child { border-bottom: none; }
+    .insight-article h2 { font-family: 'DM Serif Display', Georgia, serif; font-size: 30px; font-weight: 400; color: #111; line-height: 1.25; margin-bottom: 32px; letter-spacing: -0.01em; }
+    .insight-article p { font-family: 'Montserrat', sans-serif; font-size: 17px; line-height: 1.75; color: #333; margin-bottom: 20px; text-wrap: balance; }
+    .insight-article p:last-of-type { margin-bottom: 0; }
+    .insight-article .landing-line { font-style: italic; font-size: 18px; color: #222; margin-top: 28px; line-height: 1.6; }
+    .insight-number { display: inline-block; font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-primary); margin-bottom: 12px; opacity: 0.7; }
+
+    /* ─── BYLINE ─── */
+    .insight-byline { margin-top: 36px; font-size: 13px; color: #777; font-style: normal; letter-spacing: 0.02em; }
+    .insight-byline a { color: #777; text-decoration: underline; text-underline-offset: 2px; }
+    .insight-byline a:hover { color: var(--color-primary); }
+
+    /* ─── SHARE LINKS ─── */
+    .insight-share { margin-top: 20px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; }
+    .insight-share .share-label { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #bbb; }
+    .insight-share a, .insight-share button {
+      font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 400; color: #aaa;
+      text-decoration: none; background: none; border: none; cursor: pointer; padding: 0;
+      display: inline-flex; align-items: center; gap: 4px; transition: color 0.2s;
+    }
+    .insight-share a:hover, .insight-share button:hover { color: var(--color-primary); }
+    .insight-share svg { width: 14px; height: 14px; flex-shrink: 0; }
+    .insight-share .copied-msg { font-size: 11px; color: var(--color-primary); opacity: 0; transition: opacity 0.3s; }
+    .insight-share .copied-msg.show { opacity: 1; }
+
+    /* ─── BRIDGE (after articles 3 and 5) ─── */
+    .insight-bridge { margin-top: 32px; font-family: 'DM Serif Display', Georgia, serif; font-size: 15px; font-style: italic; color: #777; line-height: 1.6; }
+    .insight-bridge a { font-family: 'Inter', sans-serif; font-style: normal; font-size: 13px; font-weight: 500; color: var(--color-primary); text-decoration: none; margin-left: 6px; opacity: 0.8; transition: opacity 0.2s; }
+    .insight-bridge a:hover { opacity: 1; }
+
+    /* ─── CLOSING BRIDGE ─── */
+    .insights-close { padding: 64px 0 40px; text-align: center; }
+    .insights-close p { font-family: 'DM Serif Display', Georgia, serif; font-size: 18px; font-style: italic; color: #555; line-height: 1.6; margin-bottom: 8px; }
+    .insights-close a { font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500; color: var(--color-primary); text-decoration: none; transition: opacity 0.2s; }
+    .insights-close a:hover { opacity: 0.75; }
+
+    /* ─── FOOTNOTE ─── */
+    .insights-footnote { max-width: 640px; margin: 0 auto; padding: 0 20px 60px; }
+    .insights-footnote h3 {
+      font-family: 'DM Serif Display', Georgia, serif; font-size: 15px; font-weight: 400;
+      font-style: italic; color: #999; margin-bottom: 10px; padding-top: 24px; border-top: 1px solid var(--color-border);
+    }
+    .insights-footnote p { font-family: 'Inter', sans-serif; font-size: 12px; color: #aaa; line-height: 1.6; }
+    .insights-footnote .footnote-sig { font-family: 'DM Serif Display', Georgia, serif; font-size: 14px; font-style: italic; color: #999; margin-top: 16px; }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 480px) {
+      .page-header h1 { font-size: 30px; }
+      .insight-article h2 { font-size: 24px; }
+      .insight-article p { font-size: 16px; }
+      .insight-article { padding: 48px 0; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Teaching Anya — Insights for Special Needs Parents",
+    "url": "https://anya.tenerra.ai/insights",
+    "description": "Realities we shared with Anya to help her learn about parents who carry something extraordinary — and rarely hear it named.",
+    "author": {
+      "@type": "Person",
+      "name": "Michael Pearce",
+      "url": "https://pearcelaw.net"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Vest Life, Inc.",
+      "alternateName": "Tenerra.ai",
+      "url": "https://anya.tenerra.ai"
+    },
+    "blogPost": [
+      {
+        "@type": "BlogPosting",
+        "headline": "The Knowledge That Lives in You",
+        "url": "https://anya.tenerra.ai/insights#insight-1",
+        "author": { "@type": "Person", "name": "Michael Pearce", "url": "https://pearcelaw.net" },
+        "description": "The detailed, hard-won understanding a parent builds about their child that no IEP, chart, or file ever fully captures."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Always Running",
+        "url": "https://anya.tenerra.ai/insights#insight-2",
+        "author": { "@type": "Person", "name": "Michael Pearce", "url": "https://pearcelaw.net" },
+        "description": "The constant mental load of being the system — the running list of a child's needs that no one ever asks to see."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "A Life Is Not a List",
+        "url": "https://anya.tenerra.ai/insights#insight-3",
+        "author": { "@type": "Person", "name": "Michael Pearce", "url": "https://pearcelaw.net" },
+        "description": "Why legal and estate-planning documents protect a child's assets but cannot transfer what a parent knows."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "The Room",
+        "url": "https://anya.tenerra.ai/insights#insight-4",
+        "author": { "@type": "Person", "name": "Michael Pearce", "url": "https://pearcelaw.net" },
+        "description": "How observation gets mistaken for understanding when outsiders judge a family without asking what they have built."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Who Will Know?",
+        "url": "https://anya.tenerra.ai/insights#insight-5",
+        "author": { "@type": "Person", "name": "Michael Pearce", "url": "https://pearcelaw.net" },
+        "description": "A parent's fear that if they are gone, the knowing disappears with them, even when care continues."
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="/" class="nav-wordmark"><img src="/assets/images/tenerra-logo.png" alt="Anya icon" /><span class="nav-wm-wordmark"><span class="nav-wm-name">anya</span><span class="nav-wm-domain">.tenerra.ai</span></span></a>
+    <ul class="nav-links">
+      <li><a href="/about" class="nav-link">About</a></li>
+      <li><a href="/insights" class="nav-link" aria-current="page">Insights</a></li>
+      <li><a href="/faqs" class="nav-link">FAQs</a></li>
+    </ul>
+
+    <!-- More dropdown: visible when nav-links are hidden (≤860px) -->
+    <div class="nav-more">
+      <button class="nav-more-trigger" aria-expanded="false" aria-controls="more-menu">
+        More
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+          <path d="M2 4l4 4 4-4" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <div class="nav-more-menu" id="more-menu" role="menu">
+        <a href="/about">About</a>
+        <a href="/insights">Insights</a>
+        <a href="/faqs">FAQs</a>
+      </div>
+    </div>
+
+    <!-- Primary CTA -->
+    <div class="nav-actions">
+      <a href="https://app.vestlife.com" target="_blank" rel="noopener noreferrer" class="nav-cta">Get Anya</a>
+    </div>
+    <button class="nav-hamburger" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M3 5h14M3 10h14M3 15h14" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </nav>
+  <div class="nav-mobile-menu" id="mobileMenu">
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/insights">Insights</a>
+    <a href="/faqs">FAQs</a>
+    <a href="https://app.vestlife.com" target="_blank" rel="noopener noreferrer">Get Anya</a>
+  </div>
+
+  <main id="main-content">
+
+    <div class="page-header">
+      <h1>Teaching Anya</h1>
+    </div>
+
+    <div class="insights-foreword">
+      <p>These are the realities we shared with Anya to help her learn about parents who carry something extraordinary — and rarely hear it named. You may recognize yourself in them.</p>
+    </div>
+
+    <nav class="insights-toc" aria-label="Insights table of contents">
+      <ol>
+        <li><a href="#insight-1"><span class="toc-num">01</span><span class="toc-title">The Knowledge That Lives in You</span></a></li>
+        <li><a href="#insight-2"><span class="toc-num">02</span><span class="toc-title">Always Running</span></a></li>
+        <li><a href="#insight-3"><span class="toc-num">03</span><span class="toc-title">A Life Is Not a List</span></a></li>
+        <li><a href="#insight-4"><span class="toc-num">04</span><span class="toc-title">The Room</span></a></li>
+        <li><a href="#insight-5"><span class="toc-num">05</span><span class="toc-title">Who Will Know?</span></a></li>
+      </ol>
+    </nav>
+
+    <div class="insights-container">
+
+      <!-- ─── ARTICLE 1: Recognition ─── -->
+      <article class="insight-article" id="insight-1">
+        <span class="insight-number">01</span>
+        <h2>The Knowledge That Lives in You</h2>
+
+        <p>You know which shoe goes on first. Left, always left — and if someone puts the right one on first, the next twenty minutes are gone. You know this not because anyone told you but because you've lived it a hundred times, and somewhere around the thirtieth time you stopped thinking about it and just started handing over the left shoe.</p>
+
+        <p>You know the sounds she makes when things aren't going her way. The pre-tantrum sounds, and your avoidance tools kick in. You also know the sounds and actions signaling an impending meltdown. The ones that mean you have about four minutes to divert and change something before the room becomes impossible. Her teacher doesn't hear it. Her aide doesn't hear it. You hear it from the next room, through a closed door, while you're doing something else entirely.</p>
+
+        <p>You know that he doesn't hate the dentist. He hates the light above the chair. You know that she'll eat the same lunch forty-one days in a row and on the forty-second day refuse it as though she's never seen it.</p>
+
+        <p>You know what his real smile looks like and what the performed one looks like — the one he puts on when someone tells him to say cheese, which has never once been the same as the one he gives you when you walk through the door.</p>
+
+        <p>You carry this. All of it. Every day.</p>
+
+        <p>It isn't instinct, though people call it that. Instinct is what you're born with. This was built. Slowly, over years, through thousands of hours of watching one person more carefully than anyone else on earth ever will. Noticing what works. Noticing what doesn't.</p>
+
+        <p>Knowing that Wednesdays are hard and not even remembering anymore why. Holding all of it together in a way that lets you walk into a new appointment, a new classroom, a new setting, and somehow explain your child to people who have five minutes and a clipboard.</p>
+
+        <p>It's knowledge. Specific, detailed, practical, irreplaceable. The most complete understanding of your child that exists anywhere.</p>
+
+        <p>And none of it is written down. Not really. Some of it is in IEPs, but flattened into goals and benchmarks that don't sound like your child. Some of it is in medical charts, but only the parts that showed up as diagnoses. The rest — the part that makes your child who they actually are, not what their paperwork says they are — lives in you.</p>
+
+        <p>It lives in you when you hand the left shoe over without thinking. It lives in you when you position your body between him and the wall because you know the sound that comes three seconds before he starts hitting his head, and you know exactly how to hold his wrists without making it worse.</p>
+
+        <p>It lives in you when you rearrange a room before your child walks in because you already know what's going to be a problem. It lives in you when a new provider asks "what should I know about your child?" and you don't know where to start because the real answer is everything and the time you've been given is five minutes.</p>
+
+        <p>Every parent of a child with IDD holds this. Every one of you has built something that no professional, no system, no file has ever fully captured. Not because the professionals don't care. Because the knowledge doesn't fit in the containers they have.</p>
+
+        <p>You've been carrying it so long it probably doesn't feel extraordinary anymore. It's just what you do. Just Monday. Just getting through drop-off. Just knowing that the blue cup matters and the green cup is a fight and you'd better not be out of the blue cup.</p>
+
+        <p>But it is extraordinary. It is the most detailed, most nuanced, most alive record of a human being that exists. And you built it, and you carry it, and most days nobody even asks you what's in it.</p>
+
+        <p class="landing-line">This knowledge is real. It matters. And right now, you're the only place it lives.</p>
+
+        <div class="insight-byline">Michael Pearce, author at <a href="https://pearcelaw.net" target="_blank" rel="noopener">pearcelaw.net</a></div>
+        <div class="insight-share">
+          <span class="share-label">Share</span>
+          <button onclick="copyInsightLink('insight-1', this)" title="Copy link"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 9.5a3 3 0 0 0 4.4.4l2-2a3 3 0 0 0-4.2-4.2l-1.1 1.1"/><path d="M9.5 6.5a3 3 0 0 0-4.4-.4l-2 2a3 3 0 0 0 4.2 4.2l1.1-1.1"/></svg>Copy link</button>
+          <a href="mailto:?subject=The%20Knowledge%20That%20Lives%20in%20You%20%E2%80%94%20Anya%20Insights&body=I%20thought%20you%20might%20want%20to%20read%20this%3A%0A%0Ahttps%3A%2F%2Fanya.tenerra.ai%2Finsights%23insight-1" title="Share via email"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="1.5" y="3" width="13" height="10" rx="1.5"/><path d="M1.5 4.5L8 9l6.5-4.5"/></svg>Email</a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fanya.tenerra.ai%2Finsights%23insight-1" target="_blank" rel="noopener" title="Share on Facebook"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M9.5 2H11V0H9.5C7.57 0 6 1.57 6 3.5V5H4v2h2v9h2.5V7H10l.5-2H8.5V3.5c0-.55.45-1 1-1z"/></svg>Facebook</a>
+          <span class="copied-msg" id="copied-insight-1">Copied</span>
+        </div>
+      </article>
+
+      <!-- ─── ARTICLE 2: The cost ─── -->
+      <article class="insight-article" id="insight-2">
+        <span class="insight-number">02</span>
+        <h2>Always Running</h2>
+
+        <p>Tasha sits in the school parking lot, hands gripping the steering wheel. She has just finished the late afternoon IEP review meeting for Marcus — age 13, a kid the school describes in acronyms and she describes in a thousand private observations no one has asked her to share.</p>
+
+        <p>The meeting started the way they always do. The team was kind. Supportive. Professional.</p>
+
+        <p>Then Tasha opened her laptop and started reading the IEP pdf. Page one, fine. Page two, fine. Page three — a different child's name. Not Marcus. Someone else. The goals, the behavioral notes, the service minutes — all about someone else's child.</p>
+
+        <p>Oops. Copy. Paste. Wrong kid.</p>
+
+        <p>Tasha pointed it out. She knows this stuff can happen. But still. The team apologized.</p>
+
+        <p>And in that same meeting they asked her to update Marcus's behavior log every day this month. They asked her to send a quick note before each transition. They asked her to keep tracking his triggers at home.</p>
+
+        <p>More data. Another To Do to add to her list.</p>
+
+        <p>That list is always running in her head — growing, updating, never fully shutting off. A constant stream behind her eyes that maps and navigates her son's daily life.</p>
+
+        <p>Some of it is complex. Most of it is not.</p>
+
+        <p>His preferred phrases. The difference between a tantrum and a meltdown. Which sounds he can tolerate and which ones will unravel an otherwise good day. Why he will only wear black to school because a girl told him once, "Marcus, you look good in black" — and from that moment on, the decision was made.</p>
+
+        <p>Thousands of details. Some critical. Some seemingly insignificant. All of them hard-won.</p>
+
+        <p>No IEP. No intake form. No evaluation report contains them all.</p>
+
+        <p>No one in that room has ever asked to see that list.</p>
+
+        <p>But it is always running.</p>
+
+        <p>She glances at her phone. Four unread texts. Two missed calls from work. One message from her husband asking if she's rescheduled Marcus's occupational therapy appointment.</p>
+
+        <p>She used to scream or swear. Not anymore. No dead end frustrates her like that anymore. She just keeps navigating around.</p>
+
+        <p>Grabbing her phone, she opens the text she sent to herself with the screenshot of page three of Marcus's IEP — the one that wasn't about Marcus. She'll save that for the next meeting. Just to be sure.</p>
+
+        <p>Then she closes her eyes for a moment. There is no one to say this to. So she whispers it to the steering wheel:</p>
+
+        <p class="landing-line">I am so tired of being the system.</p>
+
+        <p>Then she heads out of the parking lot. Because Marcus gets off the bus in forty minutes, and she must be there.</p>
+
+        <div class="insight-byline">Michael Pearce, author at <a href="https://pearcelaw.net" target="_blank" rel="noopener">pearcelaw.net</a></div>
+        <div class="insight-share">
+          <span class="share-label">Share</span>
+          <button onclick="copyInsightLink('insight-2', this)" title="Copy link"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 9.5a3 3 0 0 0 4.4.4l2-2a3 3 0 0 0-4.2-4.2l-1.1 1.1"/><path d="M9.5 6.5a3 3 0 0 0-4.4-.4l-2 2a3 3 0 0 0 4.2 4.2l1.1-1.1"/></svg>Copy link</button>
+          <a href="mailto:?subject=Always%20Running%20%E2%80%94%20Anya%20Insights&body=I%20thought%20you%20might%20want%20to%20read%20this%3A%0A%0Ahttps%3A%2F%2Fanya.tenerra.ai%2Finsights%23insight-2" title="Share via email"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="1.5" y="3" width="13" height="10" rx="1.5"/><path d="M1.5 4.5L8 9l6.5-4.5"/></svg>Email</a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fanya.tenerra.ai%2Finsights%23insight-2" target="_blank" rel="noopener" title="Share on Facebook"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M9.5 2H11V0H9.5C7.57 0 6 1.57 6 3.5V5H4v2h2v9h2.5V7H10l.5-2H8.5V3.5c0-.55.45-1 1-1z"/></svg>Facebook</a>
+          <span class="copied-msg" id="copied-insight-2">Copied</span>
+        </div>
+      </article>
+
+      <!-- ─── ARTICLE 3: The gap ─── -->
+      <article class="insight-article" id="insight-3">
+        <span class="insight-number">03</span>
+        <h2>A Life Is Not a List</h2>
+
+        <p>Daniel sits at the kitchen table, 11:45 pm, the house finally quiet. Priya is asleep in her room down the hall, the same ring of plastic keys she has carried around since she was four still clutched in her hand. Now at seventeen, the keys have survived every meeting, tantrum, meltdown, family vacation, hospital stay, and transition.</p>
+
+        <p>The binder on the table is thicker than he expected. "Estate Planning Portfolio" in gold embossing. This is the legal structure for their succession: special needs trust documents, guardianship nominations, asset transfers, successor trustees. The attorney had been pleasant and easy to work with. Efficient. Depth of knowledge about special needs law. She confidently walked them through the paperwork of protection for Priya.</p>
+
+        <p>But now, with Priya and his wife asleep and the house still, Daniel feels a pit in his stomach. The attorney's words from their last meeting loop in his head:</p>
+
+        <p class="landing-line">"Now you can give yourselves a pat on the back. You've done a good job."</p>
+
+        <p>Have we?</p>
+
+        <p>Yes, the trust is signed. Yes, the successor has been named. But the knot in Daniel's chest hasn't loosened.</p>
+
+        <p>Will his brother as her guardian know how to calm Priya when her pacing turns to panic? Will he know the signs that she's struggling long before anyone else notices? The way she rubs the sleeve of her shirt. The way her answers get shorter. The way she stops making eye contact. The way she will smile in recognition of her happy space when you sing "Let it Go. Let it Go. Let it Go." The critical things that no blank line on a fillable pdf form will ever seek. The things learned only from knowing Priya.</p>
+
+        <p>Will he remember that Priya needs her keys — not any keys, but <em>those</em> keys — to fall asleep?</p>
+
+        <p>Daniel has done what the system asked. But no one has asked about this.</p>
+
+        <p>He thinks of the years of adaptation, the unspoken routines, the emotional scaffolding he and his wife have built together — none of it in the big binder.</p>
+
+        <p>Daniel closes the binder, carries it to the hall closet and places it in the fireproof safe. He closes the door and turns the lock.</p>
+
+        <p>Everything the law can hold is in there.</p>
+
+        <p class="landing-line">Everything others will need to know about Priya's life is not.</p>
+
+        <div class="insight-byline">Michael Pearce, author at <a href="https://pearcelaw.net" target="_blank" rel="noopener">pearcelaw.net</a></div>
+        <div class="insight-share">
+          <span class="share-label">Share</span>
+          <button onclick="copyInsightLink('insight-3', this)" title="Copy link"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 9.5a3 3 0 0 0 4.4.4l2-2a3 3 0 0 0-4.2-4.2l-1.1 1.1"/><path d="M9.5 6.5a3 3 0 0 0-4.4-.4l-2 2a3 3 0 0 0 4.2 4.2l1.1-1.1"/></svg>Copy link</button>
+          <a href="mailto:?subject=A%20Life%20Is%20Not%20a%20List%20%E2%80%94%20Anya%20Insights&body=I%20thought%20you%20might%20want%20to%20read%20this%3A%0A%0Ahttps%3A%2F%2Fanya.tenerra.ai%2Finsights%23insight-3" title="Share via email"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="1.5" y="3" width="13" height="10" rx="1.5"/><path d="M1.5 4.5L8 9l6.5-4.5"/></svg>Email</a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fanya.tenerra.ai%2Finsights%23insight-3" target="_blank" rel="noopener" title="Share on Facebook"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M9.5 2H11V0H9.5C7.57 0 6 1.57 6 3.5V5H4v2h2v9h2.5V7H10l.5-2H8.5V3.5c0-.55.45-1 1-1z"/></svg>Facebook</a>
+          <span class="copied-msg" id="copied-insight-3">Copied</span>
+        </div>
+        <div class="insight-bridge">Anya was built for this. <a href="/">Learn more →</a></div>
+      </article>
+
+      <!-- ─── ARTICLE 4: The system can't see it ─── -->
+      <article class="insight-article" id="insight-4">
+        <span class="insight-number">04</span>
+        <h2>The Room</h2>
+
+        <p>James and Maria have filed court papers to be appointed as their son's conservators. Zach's 18th birthday is coming soon, and the law of adulthood will strip away all of their authority and power to make decisions for him on that day.</p>
+
+        <p>The court process requires a home inspection. A court investigator and a support agency worker will come to their house, walk through every room, try to talk to Zach about his position on the conservatorship. They will file reports of their findings with the court.</p>
+
+        <p>The investigator walks into Zach's bedroom and writes down what she sees.</p>
+
+        <p>To her, the room looked bare. A bed on a wood frame, no headboard. A waterproof mattress cover, stripped clean of sheets. Two roughly used pillows. A single weighted blanket. No dresser. No pictures on the walls. No curtains. No blinds. The window is bare.</p>
+
+        <p>Her thoughts: "stark, deprived and isolated."</p>
+
+        <p>What she couldn't know, without asking his parents, was that every item missing from a typical teen's bedroom has a story in Zach's room.</p>
+
+        <p>The agency worker sees the same room and writes the same thing in his report to the court — adding "severely limiting and restrictive" and more like that. Neither of them asks James or Maria why they keep Zach's room this way.</p>
+
+        <p>James and Maria are a bit perplexed as to why the investigators did not ask them more questions. Why they seemed a bit uptight. But they are not worried. They know their son best, and they know what works to give him a safe and loving home. They know what they have built.</p>
+
+        <p>The reports are filed. Copies arrive in the mail.</p>
+
+        <p>James and Maria are stunned by what they read. But they are not surprised.</p>
+
+        <p>For the past fifteen years, since the diagnosis, they have witnessed others mistake observation for understanding. A stranger in a checkout line. A teacher at a meeting. A professional reading a report. Someone sees a behavior, a room, a difficult moment — and believes they know Zach.</p>
+
+        <p>They rarely do.</p>
+
+        <p>Zach has severe autism. He is not capable of providing for his own care in any respect. He is wholly dependent on his parents, 24/7. He is tall and strong, nonverbal, and cannot control his bladder or bowels. He throws things — cell phones, TV remotes, anything he can reach. Not out of anger. Just throwing.</p>
+
+        <p>He has been through periods of head-butting walls — thankfully, not anymore — but furniture and his siblings are still on the receiving end. Some things work for a while to calm his outbursts. Long car rides with Disney songs on repeat. His favorite episode of Gilligan's Island on repeat. When those lose their power, new methods are tested. Trial and error is the background rhythm of their life.</p>
+
+        <p>James and Maria are a tag team. She goes to work; he stays home with Zach. She comes home; he goes to his night shift. Constant diligence and care, every day, for fifteen years, since the diagnosis at age three. They haven't taken a vacation together, just the two of them, in all that time. Someone is always home.</p>
+
+        <p>The waterproof mattress cover is essential. James and Maria have six of them. She changes his bedding every morning. Mornings are a cleanup and sanitation routine that takes forty-five minutes before anything else in the day can begin. The waterproof mattress cover is not institutional. It is practical. It is the thing that lets them start the day.</p>
+
+        <p>The single weighted blanket is there because Zach needs weight to sleep, but more than one blanket is confusing and upsetting. They tried two. They tried a sheet and a blanket. They tried a comforter. One heavy weighted blanket is the only configuration that works. It took months to learn this.</p>
+
+        <p>The dresser is gone because Zach pulled the bottom drawer halfway out, jumped on it, and tipped the entire chest of drawers over onto himself. He had deep bruises and cuts from that day. The dresser went out. His clothes live in a hallway closet now, behind a door he can't open.</p>
+
+        <p>The walls are bare because every picture they ever hung was grabbed, torn down, and smashed. Zach likes smashing things — glass, frames, anything that comes off a wall. The last picture came down four years ago. They stopped replacing them.</p>
+
+        <p>The window has no shade, no drape, no blinds. Nothing survives. Grab. Pull. Smash. James applied privacy screening to the outside of the glass — the only solution that can't be reached from inside the room.</p>
+
+        <p>Every absent object in Zach's bedroom is a lesson his parents learned the hard way. Every bare surface is a decision that was made after something went wrong, after Zach suffered pain.</p>
+
+        <p>The room is not empty. The room is the most complete record of what James and Maria know about their son — written not in words but in the things they learned about keeping their son safe, one by one, over his autism years.</p>
+
+        <p>The investigator didn't see knowledge. She saw a checklist, and the room failed the checklist. Nobody asked the people who built the room to explain what they had built.</p>
+
+        <p>James and Maria often talk about how hard it's going to be for someone to step in one day. To carry on this loving and supportive home they have built for their son. And definitely not Zach's siblings — they've done their part over the years. That question sits heavy in the air all around Zach, growing heavier with each passing year.</p>
+
+        <p class="landing-line">The room isn't bare because his parents stopped trying. The room is bare because they will never stop.</p>
+
+        <div class="insight-byline">Michael Pearce, author at <a href="https://pearcelaw.net" target="_blank" rel="noopener">pearcelaw.net</a></div>
+        <div class="insight-share">
+          <span class="share-label">Share</span>
+          <button onclick="copyInsightLink('insight-4', this)" title="Copy link"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 9.5a3 3 0 0 0 4.4.4l2-2a3 3 0 0 0-4.2-4.2l-1.1 1.1"/><path d="M9.5 6.5a3 3 0 0 0-4.4-.4l-2 2a3 3 0 0 0 4.2 4.2l1.1-1.1"/></svg>Copy link</button>
+          <a href="mailto:?subject=The%20Room%20%E2%80%94%20Anya%20Insights&body=I%20thought%20you%20might%20want%20to%20read%20this%3A%0A%0Ahttps%3A%2F%2Fanya.tenerra.ai%2Finsights%23insight-4" title="Share via email"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="1.5" y="3" width="13" height="10" rx="1.5"/><path d="M1.5 4.5L8 9l6.5-4.5"/></svg>Email</a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fanya.tenerra.ai%2Finsights%23insight-4" target="_blank" rel="noopener" title="Share on Facebook"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M9.5 2H11V0H9.5C7.57 0 6 1.57 6 3.5V5H4v2h2v9h2.5V7H10l.5-2H8.5V3.5c0-.55.45-1 1-1z"/></svg>Facebook</a>
+          <span class="copied-msg" id="copied-insight-4">Copied</span>
+        </div>
+      </article>
+
+      <!-- ─── ARTICLE 5: The terror ─── -->
+      <article class="insight-article" id="insight-5">
+        <span class="insight-number">05</span>
+        <h2>Who Will Know?</h2>
+
+        <p>Rachel can't sleep. Not because of a crisis — her son is fine, breathing steadily in the next room, his Buzz Lightyear blanket pulled to his chin the way he needs it. Not bunched. Not folded. Pulled flat and tucked under both sides, exactly the way she has taught three aides and two respite workers to do it, and exactly the way none of them ever gets exactly right.</p>
+
+        <p>That is the thing keeping her awake. Not tonight's problem. Tonight doesn't have a problem.</p>
+
+        <p>Tonight has a question she can't stop asking.</p>
+
+        <p>Who else knows these things?</p>
+
+        <p>Who knows Eli needs the blanket tucked in exactly that way? Who knows that his dinner plate will take a long flight if carrots touch the pasta? (Must use the Pyrex plate with dividers!) Who knows that the low, steady hum — not the high-pitched one — means he's content? Who knows the exact seizure procedure? Who knows the bruise on her forearm marks a lesson in how to pin his hands differently?</p>
+
+        <p>Her husband knows some of it. Her sister knows a little. The binder in the safe knows nothing that really matters for Eli.</p>
+
+        <p>Rachel has never written most of it down. Not because she is careless. Because it lives in the doing — in the thousand daily adjustments she makes without thinking, in the way she reads his body before he makes a sound, in twelve years of paying attention so close it has become invisible even to her.</p>
+
+        <p>She thinks about the parents she has met in support groups who died — suddenly, too young. A car accident. Cancer that moved fast. A heart attack at fifty-one. And every time, the same thing happened afterward: the child survived. The child was fed and housed and supervised. The system stepped in and did what systems do.</p>
+
+        <p>But something was gone. Not the care. The knowing.</p>
+
+        <p>No one asked the right questions because no one knew there were questions to ask. The child was "fine" by every measure the system tracked. But the child had lost the only person who understood the difference between fine and actually okay.</p>
+
+        <p>Rachel turns onto her side and stares at the wall.</p>
+
+        <p>She isn't dying. She isn't sick. She is forty-four years old and had a physical last month that came back clean.</p>
+
+        <p>But the knowledge she carries has no copy. No backup. No second location. And she knows — the way she knows everything about her son, quietly, certainly, without anyone having told her — that if she disappears tomorrow, most of what she knows will disappear with her.</p>
+
+        <p class="landing-line">Eli will be cared for. But he will not be known.</p>
+
+        <div class="insight-byline">Michael Pearce, author at <a href="https://pearcelaw.net" target="_blank" rel="noopener">pearcelaw.net</a></div>
+        <div class="insight-share">
+          <span class="share-label">Share</span>
+          <button onclick="copyInsightLink('insight-5', this)" title="Copy link"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 9.5a3 3 0 0 0 4.4.4l2-2a3 3 0 0 0-4.2-4.2l-1.1 1.1"/><path d="M9.5 6.5a3 3 0 0 0-4.4-.4l-2 2a3 3 0 0 0 4.2 4.2l1.1-1.1"/></svg>Copy link</button>
+          <a href="mailto:?subject=Who%20Will%20Know%3F%20%E2%80%94%20Anya%20Insights&body=I%20thought%20you%20might%20want%20to%20read%20this%3A%0A%0Ahttps%3A%2F%2Fanya.tenerra.ai%2Finsights%23insight-5" title="Share via email"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="1.5" y="3" width="13" height="10" rx="1.5"/><path d="M1.5 4.5L8 9l6.5-4.5"/></svg>Email</a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fanya.tenerra.ai%2Finsights%23insight-5" target="_blank" rel="noopener" title="Share on Facebook"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M9.5 2H11V0H9.5C7.57 0 6 1.57 6 3.5V5H4v2h2v9h2.5V7H10l.5-2H8.5V3.5c0-.55.45-1 1-1z"/></svg>Facebook</a>
+          <span class="copied-msg" id="copied-insight-5">Copied</span>
+        </div>
+        <div class="insight-bridge">Anya was built for this. <a href="/">Learn more →</a></div>
+      </article>
+
+      <!-- ─── CLOSING BRIDGE ─── -->
+      <div class="insights-close">
+        <p>You carry knowledge about your child that no file, no system, no plan has ever held.</p>
+        <p>Anya was built for this.</p>
+        <a href="/">Learn more →</a>
+      </div>
+
+    </div>
+
+    <!-- ─── FOOTNOTE ─── -->
+    <div class="insights-footnote">
+      <h3>A word from the Founder</h3>
+      <p>These stories are composites — drawn from real moments I have witnessed walking alongside families of children with intellectual and developmental disabilities across three decades of practice. Names and details have been changed. The patterns are real. If these articles see you clearly, it's because you taught me what no legal remedy could ever fill.</p>
+      <p class="footnote-sig">Michael Pearce</p>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p class="footer-legal-text">
+      <a href="/terms" class="footer-legal-link footer-legal-link--button">Terms of Service</a> &nbsp;·&nbsp; <a href="/privacy" class="footer-legal-link">Privacy Policy</a> &nbsp;·&nbsp; © 2026 Tenerra.ai · Vest Life, Inc.
+    </p>
+    <p class="footer-signin-note">Already using Anya? <a href="https://app.vestlife.com" target="_blank" rel="noopener noreferrer" class="footer-signin-link">Sign in</a></p>
+  </footer>
+
+  <script>
+    /* ─── MORE DROPDOWN ─── */
+    document.addEventListener('DOMContentLoaded', function () {
+      var moreTrigger = document.querySelector('.nav-more-trigger');
+      var moreMenu    = document.getElementById('more-menu');
+      if (!moreTrigger || !moreMenu) return;
+      function openMore()  { moreTrigger.setAttribute('aria-expanded', 'true');  moreMenu.style.display = 'block'; }
+      function closeMore() { moreTrigger.setAttribute('aria-expanded', 'false'); moreMenu.style.display = ''; }
+      function isMoreOpen() { return moreTrigger.getAttribute('aria-expanded') === 'true'; }
+      moreTrigger.addEventListener('click', function (e) { e.stopPropagation(); isMoreOpen() ? closeMore() : openMore(); });
+      document.addEventListener('click', function (e) { if (!moreMenu.contains(e.target) && e.target !== moreTrigger) closeMore(); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && isMoreOpen()) { closeMore(); moreTrigger.focus(); } });
+    });
+    /* ─── NAV HAMBURGER ─── */
+    document.addEventListener('DOMContentLoaded', function () {
+      var btn   = document.querySelector('.nav-hamburger');
+      var mMenu = document.getElementById('mobileMenu');
+      if (!btn || !mMenu) return;
+      function openMenu()  { mMenu.classList.add('open'); btn.setAttribute('aria-expanded', 'true'); document.body.style.overflow = 'hidden'; }
+      function closeMenu() { mMenu.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); document.body.style.overflow = ''; }
+      function isOpen() { return mMenu.classList.contains('open'); }
+      btn.setAttribute('aria-expanded', 'false');
+      btn.setAttribute('aria-controls', 'mobileMenu');
+      btn.addEventListener('click', function (e) { e.stopPropagation(); isOpen() ? closeMenu() : openMenu(); });
+      mMenu.querySelectorAll('a').forEach(function (link) { link.addEventListener('click', closeMenu); });
+      document.addEventListener('click', function (e) { if (!mMenu.contains(e.target) && e.target !== btn) closeMenu(); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && isOpen()) { closeMenu(); btn.focus(); } });
+    });
+
+    /* ─── INSIGHT SHARE: COPY LINK ─── */
+    function copyInsightLink(articleId) {
+      var url = 'https://anya.tenerra.ai/insights#' + articleId;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(function() { showCopied(articleId); }).catch(function() { fallbackCopy(url, articleId); });
+      } else { fallbackCopy(url, articleId); }
+    }
+    function fallbackCopy(text, articleId) {
+      var ta = document.createElement('textarea'); ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+      document.body.appendChild(ta); ta.focus(); ta.select();
+      try { document.execCommand('copy'); showCopied(articleId); } catch(e) {}
+      document.body.removeChild(ta);
+    }
+    function showCopied(articleId) {
+      var msg = document.getElementById('copied-' + articleId);
+      if (msg) { msg.classList.add('show'); setTimeout(function() { msg.classList.remove('show'); }, 2000); }
+    }
+  </script>
+</body>
+</html>

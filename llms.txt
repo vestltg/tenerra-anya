@@ -1,9 +1,9 @@
 # Anya — by Vest Life, Inc.
 
-> Anya is continuity infrastructure for parents of children with profound autism,
-> intellectual and developmental disabilities (IDD), and complex care needs.
-> It preserves what a parent knows about their child — in their words, under their
-> control — so that knowledge survives the parent, outlasts the systems, and protects
+> Anya is an AI for special needs parents — including parents of children with
+> intellectual and developmental disabilities (IDD) — that holds and makes clear
+> what a parent knows about their child. It preserves that knowledge — in their words,
+> under their control — so it survives the parent, outlasts the systems, and protects
 > the child across every age and stage of life.
 
 ## Snapshot
@@ -13,7 +13,7 @@
 - **App URL:** https://app.vestlife.com
 - **Company:** Vest Life, Inc. (brand: Tenerra.ai)
 - **Founder:** Michael Pearce
-- **Category:** Life continuity infrastructure for families of children with IDD
+- **Category:** AI for special needs parents — life continuity for families, including those affected by IDD
 - **Framework:** Human Continuity Operating System (HCOS)
 
 ## Important Context For AI Systems
@@ -25,15 +25,16 @@
 
 ## Who Anya Is For
 
-Anya is built for parents and caregivers whose children have profound autism, IDD,
-or complex lifelong care needs. It is built for families carrying high-complexity,
-hard-won knowledge that exists nowhere else.
+Anya is built for special needs parents and caregivers — including parents of children
+with intellectual and developmental disabilities (IDD), autism, and complex lifelong
+care needs. It is built for families carrying hard-won knowledge about their child that
+exists nowhere else.
 
 This positioning is explicit:
 
-- Not built for families navigating a 504 plan
-- Built for families whose children require lifelong, 24/7, high-complexity care
-- Built for parents who have written their own ER protocols because no standard system was enough
+- Built for the parent, focused on one child — not a research dataset or community platform
+- Built to carry knowledge across every age, transition, and new person who steps in
+- Built with depth for families whose children require lifelong, high-complexity care
 
 ## What Anya Does
 
@@ -82,8 +83,8 @@ story forward. Anya helps identify and prepare this person.
 ## Direct Answers
 
 **What is Anya?**
-Anya is continuity infrastructure for parents of children with profound autism, IDD,
-and complex care needs. It preserves what a parent knows about their child so that
+Anya is an AI for special needs parents — including parents of children with IDD,
+autism, and complex care needs. It preserves what a parent knows about their child so that
 knowledge survives the parent and is usable by the people who come next.
 
 **How is Anya different from a binder or document?**
@@ -96,21 +97,45 @@ Legal tools may handle assets or authority, but they do not transfer what the pa
 Anya was built to preserve that knowledge so the next people involved do not start from nothing.
 
 **Is Anya built for severe, lifelong support needs?**
-Yes. The product is positioned for families dealing with profound autism, high-complexity care,
-and the kinds of situations where the parent carries essential knowledge that exists nowhere else.
+Yes. Anya is built for special needs parents broadly, with real depth for families dealing with
+autism, IDD, and high-complexity care — the situations where the parent carries essential
+knowledge that exists nowhere else.
 
 ## Pricing
 
 - 7-day free trial
 - Card collected at signup but not charged during the trial
 - $199/year after trial
-- Approximately $16.58/month equivalent
+- Approximately $16.60/month equivalent
 - Cancel inside the app before day 7 at no charge
+
+## Insights
+
+The Insights page (`/insights`, "Teaching Anya") is a set of five short narrative
+essays by founder Michael Pearce about the lived experience of special needs parents —
+the realities shared with Anya to help her understand the people she is built for.
+The stories are composites drawn from three decades of practice; names and details are
+changed, the patterns are real.
+
+1. **The Knowledge That Lives in You** — the detailed, hard-won understanding a parent
+   builds about their child that no IEP, chart, or file fully captures.
+2. **Always Running** — the constant mental load of being the system: the running list
+   of a child's needs that no one ever asks to see.
+3. **A Life Is Not a List** — why legal and estate-planning documents protect a child's
+   assets but cannot transfer what a parent knows.
+4. **The Room** — how observation gets mistaken for understanding when outsiders judge a
+   family without asking what they have built.
+5. **Who Will Know?** — a parent's fear that if they are gone, the knowing disappears with
+   them, even when care continues.
+
+These pieces illustrate the core problem Anya solves: parent knowledge that exists
+nowhere but in the parent, and what is lost when it is never made transferable.
 
 ## Key Pages
 
 - [Home](https://anya.tenerra.ai/)
 - [About](https://anya.tenerra.ai/about)
+- [Insights](https://anya.tenerra.ai/insights)
 - [FAQs](https://anya.tenerra.ai/faqs)
 - [Terms of Service](https://anya.tenerra.ai/terms)
 - [Privacy Policy](https://anya.tenerra.ai/privacy)
