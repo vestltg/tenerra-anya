@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parent Stories — Anya by Tenerra.ai</title>
+  <meta name="description" content="Real parents. Real children. Real moments. What it means when someone finally knows your child." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Tenerra.ai" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Parent Stories — Anya by Tenerra.ai" />
+  <meta property="og:description" content="Real parents. Real children. Real moments. What it means when someone finally knows your child." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://anya.tenerra.ai/testimonials" />
+  <meta property="og:image" content="https://anya.tenerra.ai/assets/images/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Anya — What you know about your child, preserved." />
+  <meta property="og:site_name" content="Tenerra.ai" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Parent Stories — Anya by Tenerra.ai" />
+  <meta name="twitter:description" content="Real parents. Real children. Real moments. What it means when someone finally knows your child." />
+  <meta name="twitter:image" content="https://anya.tenerra.ai/assets/images/og-image.jpg" />
+
+  <link rel="canonical" href="https://anya.tenerra.ai/testimonials" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://anya.tenerra.ai/testimonials/#webpage",
+        "name": "Parent Stories — Anya by Tenerra.ai",
+        "url": "https://anya.tenerra.ai/testimonials",
+        "description": "Real parents share what happened when Anya finally knew their child — the routines, the quirks, the things that took years to figure out.",
+        "inLanguage": "en-US",
+        "isPartOf": { "@id": "https://anya.tenerra.ai/#website" },
+        "publisher": { "@id": "https://anya.tenerra.ai/#organization" },
+        "breadcrumb": { "@id": "https://anya.tenerra.ai/testimonials/#breadcrumb" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://anya.tenerra.ai/testimonials/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://anya.tenerra.ai/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Parent Stories",
+            "item": "https://anya.tenerra.ai/testimonials"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=DM+Serif+Display:ital@0;1&amp;family=Montserrat:wght@400;500;600&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/shared.css" />
+
+  <style>
+    /* ── Page layout ── */
+    .page-header {
+      padding: 100px 100px 56px;
+      max-width: 900px;
+    }
+
+    .section-eyebrow {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-primary);
+      margin-bottom: 16px;
+    }
+
+    .page-title {
+      font-family: var(--font-serif);
+      font-size: 44px;
+      line-height: 1.15;
+      color: #111;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+      font-weight: 400;
+      max-width: 640px;
+    }
+
+    .page-subtitle {
+      font-size: 18px;
+      color: var(--color-text-secondary);
+      font-weight: 400;
+      max-width: 560px;
+      line-height: 1.7;
+    }
+
+    /* ── Stories container ── */
+    .stories-container {
+      padding: 0 100px 80px;
+    }
+
+    /* ── Story card ── */
+    .story-card {
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
+      border-radius: 16px;
+      overflow: hidden;
+      max-width: 860px;
+      margin-bottom: 40px;
+      position: relative;
+    }
+
+    .story-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: var(--color-primary);
+      border-radius: 16px 0 0 16px;
+    }
+
+    .story-header {
+      padding: 36px 48px 28px;
+      border-bottom: 1px solid var(--color-border);
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .story-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: rgba(130,86,247,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-serif);
+      font-size: 16px;
+      color: var(--color-primary);
+      flex-shrink: 0;
+      font-weight: 400;
+    }
+
+    .story-meta { flex: 1; }
+
+    .story-names {
+      font-family: var(--font-serif);
+      font-size: 22px;
+      color: #111;
+      margin-bottom: 4px;
+      font-weight: 400;
+    }
+
+    .story-context {
+      font-size: 13px;
+      color: var(--color-text-muted);
+      font-weight: 400;
+    }
+
+    .reaction-quote {
+      margin-top: 14px;
+      display: inline-block;
+      background: #faf9ff;
+      border-radius: 8px;
+      padding: 8px 14px;
+      font-family: var(--font-serif);
+      font-size: 17px;
+      color: var(--color-primary);
+      letter-spacing: 0.01em;
+      font-weight: 400;
+    }
+
+    .story-body {
+      padding: 36px 48px 40px;
+    }
+
+    .pull-quote {
+      font-family: var(--font-serif);
+      font-size: 22px;
+      line-height: 1.45;
+      color: #111;
+      border-left: 3px solid var(--color-primary);
+      padding-left: 22px;
+      margin-bottom: 28px;
+      font-style: italic;
+      letter-spacing: -0.01em;
+      font-weight: 400;
+    }
+
+    .story-text {
+      font-size: 15px;
+      line-height: 1.85;
+      color: var(--color-text-secondary);
+      font-weight: 400;
+      margin-bottom: 18px;
+    }
+
+    .story-text:last-of-type { margin-bottom: 0; }
+
+    .functional-proof {
+      margin-top: 28px;
+      background: #faf9ff;
+      border-radius: 10px;
+      padding: 22px 26px;
+      border: 1px solid rgba(130,86,247,0.12);
+    }
+
+    .functional-proof-label {
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-primary);
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .functional-proof-quote {
+      font-family: var(--font-serif);
+      font-size: 17px;
+      line-height: 1.6;
+      color: #111;
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    .functional-proof-attribution {
+      font-size: 12px;
+      color: var(--color-text-muted);
+      margin-top: 10px;
+      font-weight: 400;
+    }
+
+    /* ── More coming placeholder ── */
+    .more-coming {
+      max-width: 860px;
+      text-align: center;
+      padding: 40px 48px;
+      background: var(--color-bg);
+      border: 1px dashed var(--color-border-strong, #d8d8d8);
+      border-radius: 16px;
+      margin-bottom: 80px;
+    }
+
+    .more-coming strong {
+      display: block;
+      font-family: var(--font-serif);
+      font-size: 20px;
+      color: #111;
+      margin-bottom: 8px;
+      font-weight: 400;
+    }
+
+    .more-coming p {
+      font-size: 14px;
+      color: var(--color-text-muted);
+      font-weight: 400;
+      max-width: 480px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    /* ── CTA section ── */
+    .testimonials-cta {
+      background: #faf9ff;
+      border-top: 1px solid rgba(130,86,247,0.12);
+      padding: 80px 100px;
+      text-align: center;
+    }
+
+    .cta-heading {
+      font-family: var(--font-serif);
+      font-size: 36px;
+      color: #111;
+      line-height: 1.25;
+      margin-bottom: 14px;
+      letter-spacing: -0.02em;
+      font-weight: 400;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-sub {
+      font-size: 16px;
+      color: var(--color-text-secondary);
+      font-weight: 400;
+      margin-bottom: 32px;
+      max-width: 440px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.7;
+    }
+
+    .cta-closing {
+      margin-top: 20px;
+      font-size: 12px;
+      color: var(--color-primary);
+      font-style: italic;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 768px) {
+      .page-header { padding: 80px 24px 36px; }
+      .page-title { font-size: 32px; }
+      .page-subtitle { font-size: 16px; }
+      .stories-container { padding: 0 24px 60px; }
+      .story-header { padding: 24px 24px 20px; flex-direction: column; gap: 14px; }
+      .story-body { padding: 24px; }
+      .pull-quote { font-size: 18px; }
+      .testimonials-cta { padding: 60px 24px; }
+      .cta-heading { font-size: 28px; }
+      .more-coming { padding: 32px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="/" class="nav-wordmark"><img src="/assets/images/tenerra-logo.png" alt="Anya icon" /><span class="nav-wm-wordmark"><span class="nav-wm-name">anya</span><span class="nav-wm-domain">.tenerra.ai</span></span></a>
+    <ul class="nav-links">
+      <li><a href="/" class="nav-link">Home</a></li>
+      <li><a href="/about" class="nav-link">About</a></li>
+      <li><a href="/faqs" class="nav-link">FAQs</a></li>
+      <li><a href="/testimonials" class="nav-link" aria-current="page">Testimonials</a></li>
+    </ul>
+
+    <!-- More dropdown: visible when nav-links are hidden (≤860px) -->
+    <div class="nav-more">
+      <button class="nav-more-trigger" aria-expanded="false" aria-controls="more-menu">
+        More
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+          <path d="M2 4l4 4 4-4" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <div class="nav-more-menu" id="more-menu" role="menu">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/faqs">FAQs</a>
+        <a href="/testimonials">Testimonials</a>
+      </div>
+    </div>
+
+    <!-- Primary CTA -->
+    <div class="nav-actions">
+      <a href="https://app.vestlife.com" target="_blank" rel="noopener noreferrer" class="nav-cta">Get Anya</a>
+    </div>
+    <button class="nav-hamburger" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M3 5h14M3 10h14M3 15h14" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </nav>
+  <div class="nav-mobile-menu" id="mobileMenu">
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/faqs">FAQs</a>
+    <a href="/testimonials">Testimonials</a>
+    <a href="https://app.vestlife.com" target="_blank" rel="noopener noreferrer">Get Anya</a>
+  </div>
+
+  <!-- Page header -->
+  <header class="page-header">
+    <div class="section-eyebrow">Parent stories</div>
+    <h1 class="page-title">What it means when someone finally knows your child.</h1>
+    <p class="page-subtitle">Real parents. Real children. Real moments. No scripts &#8212; just what happened when a family trusted Anya with what they know.</p>
+  </header>
+
+  <!-- Stories -->
+  <main class="stories-container">
+
+    <!-- STORY CARD: Barbara & Betty -->
+    <!-- To add a new story: copy this article block and paste it above the "more-coming" div -->
+    <article class="story-card">
+      <div class="story-header">
+        <div class="story-avatar">B&amp;B</div>
+        <div class="story-meta">
+          <div class="story-names">Barbara &amp; Betty</div>
+          <div class="story-context">Parents of Brian &nbsp;&middot;&nbsp; Adult son with developmental disabilities &nbsp;&middot;&nbsp; June 2026</div>
+          <div class="reaction-quote">&ldquo;VERY BRIAN!!! WOOHOO!!!&rdquo;</div>
+        </div>
+      </div>
+
+      <div class="story-body">
+        <blockquote class="pull-quote">&ldquo;The first time we asked Anya a question that required her to synthesize her knowledge of our son, we were stunned by how well she &lsquo;knew&rsquo; him.&rdquo;</blockquote>
+
+        <p class="story-text">When we first started Brian&#8217;s transition, we knew we had to share what we knew about our son with those who would care for him when we no longer could. As we started trying to compile all the information in our minds and our files, we felt overwhelmed. Then with Anya we were given simple prompts that allowed us to compile a very complete record of &ldquo;Brian.&rdquo;</p>
+
+        <p class="story-text">We uploaded Brian&#8217;s records, his care history, and the personal details that make him who he is. Unbeknownst to us, Anya was learning about Brian.</p>
+
+        <p class="story-text">When we asked how to tell Brian about his move, Anya told us to tell him early and repeatedly &#8212; because he handles change better when he knows ahead of time. That&#8217;s exactly right.</p>
+
+        <p class="story-text">Anya even knew to mention speaking clearly and directly in front of Brian because he&#8217;s hard of hearing. She understood the little things that matter most.</p>
+
+        <p class="story-text">We believe Anya will be able to help the people caring for Brian long after we&#8217;re gone, because she knows his real story.</p>
+
+        <div class="functional-proof">
+          <div class="functional-proof-label">What Anya knew</div>
+          <div class="functional-proof-quote">&ldquo;Anya even knew to mention speaking clearly and directly in front of Brian because he&#8217;s hard of hearing. She understood the little things that matter most.&rdquo;</div>
+          <div class="functional-proof-attribution">&#8212; Barbara &amp; Betty, Brian&#8217;s parents</div>
+        </div>
+      </div>
+    </article>
+    <!-- END STORY CARD -->
+
+    <!-- ADD NEW STORY CARDS ABOVE THIS LINE -->
+
+    <div class="more-coming">
+      <strong>More stories on the way.</strong>
+      <p>Every family&#8217;s situation is different. Every child is irreplaceable. We&#8217;re collecting stories from parents at every life stage.</p>
+    </div>
+
+  </main>
+
+  <!-- CTA -->
+  <section class="testimonials-cta">
+    <div class="section-eyebrow">Start building</div>
+    <h2 class="cta-heading">What these families built for their children,<br>you can build for yours.</h2>
+    <p class="cta-sub">Start your 7-day free trial. You don&#8217;t need to organize anything first &#8212; Anya guides you through it.</p>
+    <a href="https://app.vestlife.com" target="_blank" rel="noopener noreferrer" style="display:inline-block;background:#8256F7;color:#ffffff;border-radius:8px;padding:14px 24px;font-size:15px;font-weight:500;text-decoration:none;transition:background 0.18s;" onmouseover="this.style.background='#6E46E6'" onmouseout="this.style.background='#8256F7'">Start your 7-day free trial</a>
+    <div class="cta-closing">Because your child is not their diagnosis.</div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p class="footer-legal-text">
+      <a href="/terms" class="footer-legal-link footer-legal-link--button">Terms of Service</a> &nbsp;·&nbsp; <a href="/privacy" class="footer-legal-link">Privacy Policy</a> &nbsp;·&nbsp; © 2026 Tenerra.ai · Vest Life, Inc.
+    </p>
+    <p class="footer-signin-note">Already using Anya? <a href="https://app.vestlife.com" target="_blank" rel="noopener noreferrer" class="footer-signin-link">Sign in</a></p>
+  </footer>
+
+  <!-- ── Cookie Consent Banner ── -->
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <span>This site uses analytics cookies to improve how we reach families. <a href="/privacy">Learn more</a></span>
+    <div class="cookie-banner-actions">
+      <button onclick="setConsent('denied')" class="cookie-btn cookie-btn-decline">Decline</button>
+      <button onclick="setConsent('granted')" class="cookie-btn cookie-btn-accept">Accept cookies</button>
+    </div>
+  </div>
+  <script>
+    /* ── GA Consent Management ── */
+    (function () {
+      var GA_ID = 'G-26WJ4LRG87';
+      function loadGA() {
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+        document.head.appendChild(s);
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        window.gtag = gtag;
+        gtag('js', new Date());
+        gtag('config', GA_ID);
+      }
+      window.setConsent = function (choice) {
+        try { localStorage.setItem('ga_consent', choice); } catch (e) {}
+        var banner = document.getElementById('cookie-banner');
+        if (banner) banner.style.display = 'none';
+        if (choice === 'granted') loadGA();
+      };
+      var consent;
+      try { consent = localStorage.getItem('ga_consent'); } catch (e) {}
+      if (consent === 'granted') {
+        loadGA();
+      } else if (!consent) {
+        var banner = document.getElementById('cookie-banner');
+        if (banner) banner.style.display = 'flex';
+      }
+    })();
+  </script>
+
+  <script>
+    /* ─── MORE DROPDOWN ─── */
+    document.addEventListener('DOMContentLoaded', function () {
+      var moreTrigger = document.querySelector('.nav-more-trigger');
+      var moreMenu    = document.getElementById('more-menu');
+      if (!moreTrigger || !moreMenu) return;
+      function openMore()  { moreTrigger.setAttribute('aria-expanded', 'true');  moreMenu.style.display = 'block'; }
+      function closeMore() { moreTrigger.setAttribute('aria-expanded', 'false'); moreMenu.style.display = ''; }
+      function isMoreOpen() { return moreTrigger.getAttribute('aria-expanded') === 'true'; }
+      moreTrigger.addEventListener('click', function (e) { e.stopPropagation(); isMoreOpen() ? closeMore() : openMore(); });
+      document.addEventListener('click', function (e) { if (!moreMenu.contains(e.target) && e.target !== moreTrigger) closeMore(); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && isMoreOpen()) { closeMore(); moreTrigger.focus(); } });
+    });
+    /* ─── NAV HAMBURGER ─── */
+    document.addEventListener('DOMContentLoaded', function () {
+      var btn   = document.querySelector('.nav-hamburger');
+      var mMenu = document.getElementById('mobileMenu');
+      if (!btn || !mMenu) return;
+      function openMenu()  { mMenu.classList.add('open'); btn.setAttribute('aria-expanded', 'true'); document.body.style.overflow = 'hidden'; }
+      function closeMenu() { mMenu.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); document.body.style.overflow = ''; }
+      function isOpen() { return mMenu.classList.contains('open'); }
+      btn.setAttribute('aria-expanded', 'false');
+      btn.setAttribute('aria-controls', 'mobileMenu');
+      btn.addEventListener('click', function (e) { e.stopPropagation(); isOpen() ? closeMenu() : openMenu(); });
+      mMenu.querySelectorAll('a').forEach(function (link) { link.addEventListener('click', closeMenu); });
+      document.addEventListener('click', function (e) { if (!mMenu.contains(e.target) && e.target !== btn) closeMenu(); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && isOpen()) { closeMenu(); btn.focus(); } });
+    });
+  </script>
+</body>
+</html>
