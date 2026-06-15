@@ -16,6 +16,7 @@ Anya solves this by helping parents capture their lived knowledge — routines, 
 
 - [Landing Page](https://anya.tenerra.ai/): Product overview, demo conversation showing Anya in action, pricing, and founder background
 - [FAQs](https://anya.tenerra.ai/faqs): 16 questions across three sections — About Anya, Understanding the Problem, and Privacy & Trust
+- [Testimonials](https://anya.tenerra.ai/testimonials): Parent stories — real families describing what happened when Anya finally knew their child
 - [About](https://anya.tenerra.ai/about): Background on Vest Life, Inc. and Michael Pearce
 - [Insights](https://anya.tenerra.ai/insights): Articles on knowledge continuity, IDD planning, and the problems Anya was built to solve
 
