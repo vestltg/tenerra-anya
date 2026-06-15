@@ -133,6 +133,29 @@ Before committing, prefer to check:
 6. Public pages still include favicon links.
 7. Legal/privacy copy still matches real site behavior.
 
+## Branch and Deployment Workflow
+
+This repo uses a two-branch promotion model:
+
+- **`main`** — production. Deployed to `https://anya.tenerra.ai` via Cloudflare Pages. Never commit directly to main.
+- **`development`** — staging. Deployed to a fixed Cloudflare Pages preview URL for review before promotion to production.
+
+### Normal flow
+
+1. Branch off `development` using the standard prefix convention (`feat/`, `fix/`, `chore/`, `refactor/`).
+2. Open a PR targeting **`development`** (not `main`).
+3. Once approved, merge the PR into `development` and verify on the CF preview URL.
+4. When a batch of changes is ready to ship, promote `development` → `main` via a PR or direct merge.
+
+### Always target `development` for new PRs
+
+Do not open PRs against `main` directly. All work flows through `development` first.
+
+### Cloudflare Pages branch config
+
+- `main` → production (`anya.tenerra.ai`)
+- `development` → fixed staging preview URL (configured in CF Pages settings)
+
 ## Repository Hygiene
 
 - Do not commit `.DS_Store`.
