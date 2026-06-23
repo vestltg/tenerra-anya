@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How Anya Works — Anya by Tenerra.ai</title>
+  <meta name="description" content="See how Anya works in four steps and about ten minutes: add a document you already have, describe your child in your own words, add a few layers, then ask Anya a question and see your child reflected back." />
+  <meta name="keywords" content="how Anya works, getting started with Anya, special needs parent app, My Documents, About Me, Pockets, child knowledge continuity" />
+  <meta name="theme-color" content="#8256F7" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Tenerra.ai" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="How Anya Works — Tenerra.ai" />
+  <meta property="og:description" content="Four steps. About ten minutes. Add a document, describe your child in your own words, then ask Anya a question and see your child reflected back." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://anya.tenerra.ai/how-it-works" />
+  <meta property="og:image" content="https://anya.tenerra.ai/assets/images/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Anya — What you know about your child, ready when it matters" />
+  <meta property="og:site_name" content="Tenerra.ai" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="How Anya Works — Tenerra.ai" />
+  <meta name="twitter:description" content="Four steps. About ten minutes. Add a document, describe your child in your own words, then ask Anya a question and see your child reflected back." />
+  <meta name="twitter:image" content="https://anya.tenerra.ai/assets/images/og-image.jpg" />
+
+  <link rel="canonical" href="https://anya.tenerra.ai/how-it-works" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=DM+Serif+Display:ital@0;1&amp;family=Montserrat:wght@400;500;600&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/shared.css" />
+
+  <style>
+    /* ─── PAGE LAYOUT ─── */
+    .hiw-hero {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 120px 20px 24px;
+    }
+    .hiw-hero h1 {
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--color-text-primary);
+      margin-bottom: 16px;
+    }
+    .hiw-hero .hiw-sub {
+      font-size: 19px;
+      line-height: 1.6;
+      color: var(--color-text-secondary);
+      max-width: 560px;
+      margin: 0 auto 28px;
+    }
+    .hiw-meta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-ui);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: var(--color-accent);
+      margin-bottom: 24px;
+    }
+
+    /* ─── FRAMING ─── */
+    .hiw-framing {
+      max-width: 660px;
+      margin: 0 auto;
+      padding: 24px 20px 8px;
+      text-align: center;
+    }
+    .hiw-framing p {
+      font-size: 20px;
+      line-height: 1.7;
+      color: var(--color-text-primary);
+      margin: 0;
+    }
+
+    /* ─── STEPS ─── */
+    .hiw-step {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 20px;
+      border-top: 1px solid var(--color-border);
+    }
+    .hiw-step-eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    .hiw-step-num {
+      flex-shrink: 0;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: var(--color-icon-tile);
+      color: var(--color-primary);
+      font-family: var(--font-ui);
+      font-size: 15px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hiw-step-label {
+      font-family: var(--font-ui);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-primary);
+    }
+    .hiw-step h2 {
+      font-size: clamp(1.4rem, 3vw, 1.85rem);
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      color: var(--color-text-primary);
+      margin-bottom: 12px;
+    }
+    .hiw-step p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: var(--color-text-secondary);
+      margin-bottom: 0;
+    }
+
+    /* ─── MOCKUP FRAMES ─── */
+    .hiw-mockup {
+      margin: 28px 0 0;
+      background: #ffffff;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      padding: 14px;
+      box-shadow: 0 2px 12px rgba(44, 36, 66, 0.05);
+    }
+    .hiw-mockup img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .hiw-mockup figcaption {
+      font-family: var(--font-ui);
+      font-size: 12px;
+      color: var(--color-text-muted);
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    /* ─── PARENT QUOTE ─── */
+    .parent-quote {
+      font-family: var(--font-display);
+      font-size: clamp(1.15rem, 2.4vw, 1.4rem);
+      line-height: 1.5;
+      color: var(--color-text-primary);
+      background: var(--color-primary-soft);
+      border-left: 3px solid var(--color-primary);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 24px 28px;
+      margin: 28px 0 0;
+    }
+    .parent-quote cite {
+      display: block;
+      margin-top: 16px;
+      font-family: var(--font-ui);
+      font-style: normal;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      color: var(--color-text-secondary);
+    }
+
+    /* ─── RECOGNITION MOMENT ─── */
+    .hiw-recognition {
+      max-width: 760px;
+      margin: 24px auto;
+      padding: 56px 32px;
+      background: var(--color-primary-soft);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      text-align: center;
+    }
+    .hiw-recognition p {
+      font-family: var(--font-display);
+      font-size: clamp(1.3rem, 3vw, 1.7rem);
+      line-height: 1.5;
+      color: var(--color-text-primary);
+      max-width: 620px;
+      margin: 0 auto;
+    }
+
+    /* ─── WHAT'S NEXT ─── */
+    .hiw-next {
+      max-width: 660px;
+      margin: 0 auto;
+      padding: 48px 20px 8px;
+      text-align: center;
+    }
+    .hiw-next p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: var(--color-text-secondary);
+      margin: 0;
+    }
+
+    /* ─── CTA ─── */
+    .hiw-cta {
+      text-align: center;
+      padding: 40px 20px 96px;
+    }
+    .button-primary.button-lg {
+      font-size: 16px;
+      padding: 16px 30px;
+      border-radius: 10px;
+    }
+
+    /* ─── SCROLL REVEAL ─── */
+    @media (prefers-reduced-motion: no-preference) {
+      .fade-in {
+        opacity: 0;
+        transform: translateY(12px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+      }
+      .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hiw-hero { padding-top: 104px; }
+      .hiw-framing p { font-size: 18px; }
+      .hiw-step { padding: 40px 16px; }
+      .hiw-step p { font-size: 16px; }
+      .hiw-recognition { padding: 40px 22px; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How Anya works",
+    "description": "Get started with Anya in four steps and about ten minutes: add a document you already have, describe your child in your own words, add a few more layers, then ask Anya a question and see your child reflected back.",
+    "totalTime": "PT10M",
+    "image": "https://anya.tenerra.ai/assets/images/og-image.jpg",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "Start with a document you already have",
+        "text": "Find your child's most recent IEP, IPP, diagnosis report, or therapy summary and add it to My Documents. Anya reads it and builds the first layer of what she knows.",
+        "url": "https://anya.tenerra.ai/how-it-works#step-1"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "Tell Anya who your child is, in your own words",
+        "text": "Open About Me and pick a Pocket like My Personality, My Story, or Top 10 Things About Me. Write the way you'd describe your child to someone about to spend the day with them.",
+        "url": "https://anya.tenerra.ai/how-it-works#step-2"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "Add a few more layers",
+        "text": "Write two or three entries in all. Each Pocket gives Anya a different dimension: personality, history, the things that matter most.",
+        "url": "https://anya.tenerra.ai/how-it-works#step-3"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 4,
+        "name": "Ask, and see your child reflected back",
+        "text": "Ask Anya a question, like what a new caregiver should know about your child's first day. Her answer pulls from the document you added and the words you wrote, and cites where each detail came from.",
+        "url": "https://anya.tenerra.ai/how-it-works#step-4"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="/" class="nav-wordmark"><img src="/assets/images/tenerra-logo.png" alt="Anya icon" /><span class="nav-wm-wordmark"><span class="nav-wm-name">anya</span><span class="nav-wm-domain">.tenerra.ai</span></span></a>
+    <ul class="nav-links">
+      <li><a href="/about" class="nav-link">About</a></li>
+      <li><a href="/insights" class="nav-link">Insights</a></li>
+      <li><a href="/faqs" class="nav-link">FAQs</a></li>
+      <li><a href="/testimonials" class="nav-link">Testimonials</a></li>
+      <li><a href="/how-it-works" class="nav-link" aria-current="page">How it works</a></li>
+    </ul>
+
+    <!-- More dropdown: visible when nav-links are hidden (≤860px) -->
+    <div class="nav-more">
+      <button class="nav-more-trigger" aria-expanded="false" aria-controls="more-menu">
+        More
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+          <path d="M2 4l4 4 4-4" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <div class="nav-more-menu" id="more-menu" role="menu">
+        <a href="/about">About</a>
+        <a href="/insights">Insights</a>
+        <a href="/faqs">FAQs</a>
+        <a href="/testimonials">Testimonials</a>
+        <a href="/how-it-works">How it works</a>
+      </div>
+    </div>
+
+    <!-- Primary CTA -->
+    <div class="nav-actions">
+      <a href="https://app.vestlife.com" target="_blank" rel="noopener noreferrer" class="nav-cta">Get Anya</a>
+    </div>
+    <button class="nav-hamburger" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M3 5h14M3 10h14M3 15h14" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </nav>
+  <div class="nav-mobile-menu" id="mobileMenu">
+    <a href="/about">About</a>
+    <a href="/insights">Insights</a>
+    <a href="/faqs">FAQs</a>
+    <a href="/testimonials">Testimonials</a>
+    <a href="/how-it-works">How it works</a>
+    <a href="https://app.vestlife.com" target="_blank" rel="noopener noreferrer">Get Anya</a>
+  </div>
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="hiw-hero">
+      <h1>How Anya works</h1>
+      <p class="hiw-sub">Four steps. About ten minutes. Start with what you already know about your child.</p>
+      <p class="hiw-meta">
+        <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M5 8l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        No special prep needed
+      </p>
+      <div>
+        <a href="https://app.vestlife.com" target="_blank" rel="noopener noreferrer" class="button-primary button-lg" data-cta="hiw-hero">Get Anya</a>
+      </div>
+    </section>
+
+    <!-- FRAMING -->
+    <section class="hiw-framing fade-in">
+      <p>Every Vest starts empty. The goal isn't to fill everything at once — it's to start. In your first few minutes, you give Anya a document and a few words in your own voice, and she begins to know your child.</p>
+    </section>
+
+    <!-- STEP 1 -->
+    <section class="hiw-step fade-in" id="step-1">
+      <div class="hiw-step-eyebrow">
+        <span class="hiw-step-num">1</span>
+        <span class="hiw-step-label">Step One</span>
+      </div>
+      <h2>Start with a document you already have</h2>
+      <p>Find your child's most recent IEP, IPP, diagnosis report, or therapy summary — you probably have one already. Add it to My Documents and Anya reads it, building the first layer of what she knows. Don't have one handy? Start with Step 2 instead.</p>
+      <figure class="hiw-mockup">
+        <img src="/assets/images/how-it-works-step1-documents.svg" width="600" height="300" loading="lazy" decoding="async" alt="The Anya app showing a child's IEP uploaded to My Documents, with Anya reading it." />
+      </figure>
+    </section>
+
+    <!-- STEP 2 -->
+    <section class="hiw-step fade-in" id="step-2">
+      <div class="hiw-step-eyebrow">
+        <span class="hiw-step-num">2</span>
+        <span class="hiw-step-label">Step Two</span>
+      </div>
+      <h2>Tell Anya who your child is, in your own words</h2>
+      <p>Open About Me and pick a Pocket — like My Personality, My Story, or Top 10 Things About Me. Write the way you'd describe your child to someone about to spend the day with them. Not the diagnosis. The real, everyday them.</p>
+      <figure class="hiw-mockup">
+        <img src="/assets/images/how-it-works-step2-about-me.svg" width="600" height="280" loading="lazy" decoding="async" alt="The About Me section with three Pockets, and a parent writing a personal entry in My Personality." />
+      </figure>
+      <blockquote class="parent-quote">
+        &#8220;Terrance loves being around people and will park himself in the kitchen just to be near whoever&#8217;s cooking. He talks constantly — whatever pops into his head, he says it. He asks questions he already knows the answers to, which I think is his way of keeping a conversation going. When he&#8217;s had enough socializing he&#8217;ll disappear to his room, put on his headphones, and sing along to his playlist at full volume. He&#8217;s outgoing — he&#8217;ll walk up to strangers at the grocery store and start chatting like they&#8217;re old friends. He&#8217;s got a big heart and a stubborn streak. If something doesn&#8217;t go his way at home, you&#8217;ll hear about it, but at school or out with friends he holds it together. He just saves it all for us.&#8221;
+        <cite>— a parent, in My Personality (name changed)</cite>
+      </blockquote>
+    </section>
+
+    <!-- STEP 3 -->
+    <section class="hiw-step fade-in" id="step-3">
+      <div class="hiw-step-eyebrow">
+        <span class="hiw-step-num">3</span>
+        <span class="hiw-step-label">Step Three</span>
+      </div>
+      <h2>Add a few more layers</h2>
+      <p>Write two or three entries in all. Each Pocket gives Anya a different dimension — personality, history, the things that matter most. The more you share, the more completely she knows your child.</p>
+    </section>
+
+    <!-- STEP 4 -->
+    <section class="hiw-step fade-in" id="step-4">
+      <div class="hiw-step-eyebrow">
+        <span class="hiw-step-num">4</span>
+        <span class="hiw-step-label">Step Four</span>
+      </div>
+      <h2>Ask, and see your child reflected back</h2>
+      <p>Now ask Anya a question, like &#8220;What should a new caregiver know about my child&#8217;s first day?&#8221; Her answer pulls from the document you added and the words you wrote — and cites where each detail came from. This is the moment it clicks: Anya describing your child the way you would.</p>
+      <figure class="hiw-mockup">
+        <img src="/assets/images/how-it-works-step4-conversation.svg" width="600" height="320" loading="lazy" decoding="async" alt="Anya answering a question about the child's first day, citing the document and Pocket it drew from." />
+      </figure>
+    </section>
+
+    <!-- RECOGNITION MOMENT -->
+    <section class="hiw-recognition fade-in">
+      <p>A binder stores information. Anya holds what you know and gives it back — specific, personal, and ready for the people who will need it when you can&#8217;t be there to explain it yourself.</p>
+    </section>
+
+    <!-- WHAT'S NEXT -->
+    <section class="hiw-next fade-in">
+      <p>There&#8217;s more to add whenever you&#8217;re ready — Health Care, Day to Day, Caregivers &amp; Key People, and more. Come back any time you have five minutes.</p>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="hiw-cta fade-in">
+      <a href="https://app.vestlife.com" target="_blank" rel="noopener noreferrer" class="button-primary button-lg" data-cta="hiw-footer">Get Anya</a>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p class="footer-legal-text">
+      <a href="/terms" class="footer-legal-link footer-legal-link--button">Terms of Service</a> &nbsp;·&nbsp; <a href="/privacy" class="footer-legal-link">Privacy Policy</a> &nbsp;·&nbsp; © 2026 Tenerra.ai · Vest Life, Inc.
+    </p>
+    <p class="footer-signin-note">Already using Anya? <a href="https://app.vestlife.com" target="_blank" rel="noopener noreferrer" class="footer-signin-link">Sign in</a></p>
+  </footer>
+
+  <script>
+    /* ─── MORE DROPDOWN ─── */
+    document.addEventListener('DOMContentLoaded', function () {
+      var moreTrigger = document.querySelector('.nav-more-trigger');
+      var moreMenu    = document.getElementById('more-menu');
+
+      if (!moreTrigger || !moreMenu) return;
+
+      function openMore()  { moreTrigger.setAttribute('aria-expanded', 'true');  moreMenu.style.display = 'block'; }
+      function closeMore() { moreTrigger.setAttribute('aria-expanded', 'false'); moreMenu.style.display = ''; }
+      function isMoreOpen() { return moreTrigger.getAttribute('aria-expanded') === 'true'; }
+
+      moreTrigger.addEventListener('click', function (e) {
+        e.stopPropagation();
+        isMoreOpen() ? closeMore() : openMore();
+      });
+
+      document.addEventListener('click', function (e) {
+        if (!moreMenu.contains(e.target) && e.target !== moreTrigger) closeMore();
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && isMoreOpen()) { closeMore(); moreTrigger.focus(); }
+      });
+    });
+
+    /* ─── NAV HAMBURGER (guaranteed mobile toggle) ─── */
+    document.addEventListener('DOMContentLoaded', function () {
+      var btn   = document.querySelector('.nav-hamburger');
+      var mMenu = document.getElementById('mobileMenu');
+
+      if (!btn || !mMenu) return;
+
+      function openMenu() {
+        mMenu.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+      }
+      function closeMenu() {
+        mMenu.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      }
+      function isOpen() {
+        return mMenu.classList.contains('open');
+      }
+
+      btn.setAttribute('aria-expanded', 'false');
+      btn.setAttribute('aria-controls', 'mobileMenu');
+
+      btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        isOpen() ? closeMenu() : openMenu();
+      });
+
+      mMenu.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', closeMenu);
+      });
+
+      document.addEventListener('click', function (e) {
+        if (!mMenu.contains(e.target) && e.target !== btn) closeMenu();
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && isOpen()) { closeMenu(); btn.focus(); }
+      });
+    });
+  </script>
+
+  <script>
+    /* ─── SCROLL REVEAL ─── */
+    (function () {
+      var els = document.querySelectorAll('.fade-in');
+      if (!els.length) return;
+
+      if (!('IntersectionObserver' in window) ||
+          window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        els.forEach(function (el) { el.classList.add('visible'); });
+        return;
+      }
+
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+
+      els.forEach(function (el) { observer.observe(el); });
+    })();
+  </script>
+
+  <!-- ── Cookie Consent Banner ── -->
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <span>This site uses analytics cookies to improve how we reach families. <a href="/privacy">Learn more</a></span>
+    <div class="cookie-banner-actions">
+      <button onclick="setConsent('denied')" class="cookie-btn cookie-btn-decline">Decline</button>
+      <button onclick="setConsent('granted')" class="cookie-btn cookie-btn-accept">Accept cookies</button>
+    </div>
+  </div>
+  <script>
+    /* ── GA Consent Management ── */
+    (function () {
+      var GA_ID = 'G-26WJ4LRG87';
+      function loadGA() {
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+        document.head.appendChild(s);
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        window.gtag = gtag;
+        gtag('js', new Date());
+        gtag('config', GA_ID);
+      }
+      window.setConsent = function (choice) {
+        try { localStorage.setItem('ga_consent', choice); } catch (e) {}
+        var banner = document.getElementById('cookie-banner');
+        if (banner) banner.style.display = 'none';
+        if (choice === 'granted') loadGA();
+      };
+      var consent;
+      try { consent = localStorage.getItem('ga_consent'); } catch (e) {}
+      if (consent === 'granted') {
+        loadGA();
+      } else if (!consent) {
+        var banner = document.getElementById('cookie-banner');
+        if (banner) banner.style.display = 'flex';
+      }
+
+      /* CTA-click event — fired only when consent is granted */
+      document.addEventListener('click', function (e) {
+        var cta = e.target.closest ? e.target.closest('[data-cta]') : null;
+        if (cta && typeof window.gtag === 'function') {
+          window.gtag('event', 'cta_click', {
+            cta_location: cta.getAttribute('data-cta'),
+            page: 'how-it-works'
+          });
+        }
+      });
+    })();
+  </script>
+  <script>
+    (function () {
+      if (!navigator.modelContext || typeof navigator.modelContext.provideContext !== 'function') return;
+
+      navigator.modelContext.provideContext({
+        tools: [
+          {
+            name: 'open_app',
+            description: 'Open the Anya app sign-in page.',
+            inputSchema: {
+              type: 'object',
+              properties: {}
+            },
+            execute: async function () {
+              var popup = window.open('https://app.vestlife.com', '_blank', 'noopener,noreferrer');
+              return { opened: !!popup, url: 'https://app.vestlife.com' };
+            }
+          },
+          {
+            name: 'site_search',
+            description: 'Find matching text on this page and return snippets.',
+            inputSchema: {
+              type: 'object',
+              properties: {
+                query: { type: 'string' }
+              },
+              required: ['query']
+            },
+            execute: async function (input) {
+              var query = (input && input.query ? String(input.query) : '').trim().toLowerCase();
+              if (!query) return { matches: [] };
+              var text = document.body ? document.body.innerText : '';
+              var lines = text.split('\n').map(function (line) { return line.trim(); }).filter(Boolean);
+              var matches = lines.filter(function (line) { return line.toLowerCase().indexOf(query) !== -1; }).slice(0, 5);
+              return { matches: matches };
+            }
+          }
+        ]
+      });
+    })();
+  </script>
+
+</body>
+</html>
