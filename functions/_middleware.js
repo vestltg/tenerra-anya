@@ -5,6 +5,8 @@ function acceptsMarkdown(request) {
 
 function htmlToMarkdown(html) {
   return html
+    .replace(/<style[^>]*>[\s\S]*?<\/style>/gi, "")
+    .replace(/<script[^>]*>[\s\S]*?<\/script>/gi, "")
     .replace(/<h1[^>]*>([\s\S]*?)<\/h1>/gi, "\n# $1\n")
     .replace(/<h2[^>]*>([\s\S]*?)<\/h2>/gi, "\n## $1\n")
     .replace(/<h3[^>]*>([\s\S]*?)<\/h3>/gi, "\n### $1\n")
