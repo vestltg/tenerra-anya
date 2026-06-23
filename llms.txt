@@ -15,6 +15,7 @@ Anya solves this by helping parents capture their lived knowledge — routines, 
 ## Pages
 
 - [Landing Page](https://anya.tenerra.ai/): Product overview, demo conversation showing Anya in action, pricing, and founder background
+- [How Anya Works](https://anya.tenerra.ai/how-it-works): The four-step getting-started flow — add a document you already have to My Documents, describe your child in your own words in an About Me Pocket, add a few more layers, then ask Anya a question and see your child reflected back with cited sources
 - [FAQs](https://anya.tenerra.ai/faqs): 16 questions across three sections — About Anya, Understanding the Problem, and Privacy & Trust
 - [Testimonials](https://anya.tenerra.ai/testimonials): Parent stories — real families describing what happened when Anya finally knew their child
 - [About](https://anya.tenerra.ai/about): Background on Vest Life, Inc. and Michael Pearce

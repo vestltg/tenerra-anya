@@ -94,7 +94,7 @@
       font-family: var(--font-serif);
       font-size: 44px;
       line-height: 1.15;
-      color: #111;
+      color: var(--color-text-primary);
       margin-bottom: 16px;
       letter-spacing: -0.02em;
       font-weight: 400;
@@ -164,7 +164,7 @@
     .story-names {
       font-family: var(--font-serif);
       font-size: 22px;
-      color: #111;
+      color: var(--color-text-primary);
       margin-bottom: 4px;
       font-weight: 400;
     }
@@ -178,7 +178,7 @@
     .reaction-quote {
       margin-top: 14px;
       display: inline-block;
-      background: #faf9ff;
+      background: var(--color-primary-soft);
       border-radius: 8px;
       padding: 8px 14px;
       font-family: var(--font-serif);
@@ -196,7 +196,7 @@
       font-family: var(--font-serif);
       font-size: 22px;
       line-height: 1.45;
-      color: #111;
+      color: var(--color-text-primary);
       border-left: 3px solid var(--color-primary);
       padding-left: 22px;
       margin-bottom: 28px;
@@ -217,7 +217,7 @@
 
     .functional-proof {
       margin-top: 28px;
-      background: #faf9ff;
+      background: var(--color-primary-soft);
       border-radius: 10px;
       padding: 22px 26px;
       border: 1px solid rgba(130,86,247,0.12);
@@ -236,7 +236,7 @@
       font-family: var(--font-serif);
       font-size: 17px;
       line-height: 1.6;
-      color: #111;
+      color: var(--color-text-primary);
       font-style: italic;
       font-weight: 400;
     }
@@ -263,7 +263,7 @@
       display: block;
       font-family: var(--font-serif);
       font-size: 20px;
-      color: #111;
+      color: var(--color-text-primary);
       margin-bottom: 8px;
       font-weight: 400;
     }
@@ -279,7 +279,7 @@
 
     /* ── CTA section ── */
     .testimonials-cta {
-      background: #faf9ff;
+      background: var(--color-primary-soft);
       border-top: 1px solid rgba(130,86,247,0.12);
       padding: 80px 100px;
       text-align: center;
@@ -288,7 +288,7 @@
     .cta-heading {
       font-family: var(--font-serif);
       font-size: 36px;
-      color: #111;
+      color: var(--color-text-primary);
       line-height: 1.25;
       margin-bottom: 14px;
       letter-spacing: -0.02em;
@@ -337,10 +337,11 @@
   <nav class="nav">
     <a href="/" class="nav-wordmark"><img src="/assets/images/tenerra-logo.png" alt="Anya icon" /><span class="nav-wm-wordmark"><span class="nav-wm-name">anya</span><span class="nav-wm-domain">.tenerra.ai</span></span></a>
     <ul class="nav-links">
-      <li><a href="/" class="nav-link">Home</a></li>
       <li><a href="/about" class="nav-link">About</a></li>
+      <li><a href="/insights" class="nav-link">Insights</a></li>
       <li><a href="/faqs" class="nav-link">FAQs</a></li>
       <li><a href="/testimonials" class="nav-link" aria-current="page">Testimonials</a></li>
+      <li><a href="/how-it-works" class="nav-link">How it works</a></li>
     </ul>
 
     <!-- More dropdown: visible when nav-links are hidden (≤860px) -->
@@ -352,10 +353,11 @@
         </svg>
       </button>
       <div class="nav-more-menu" id="more-menu" role="menu">
-        <a href="/">Home</a>
         <a href="/about">About</a>
+        <a href="/insights">Insights</a>
         <a href="/faqs">FAQs</a>
         <a href="/testimonials">Testimonials</a>
+        <a href="/how-it-works">How it works</a>
       </div>
     </div>
 
@@ -370,10 +372,11 @@
     </button>
   </nav>
   <div class="nav-mobile-menu" id="mobileMenu">
-    <a href="/">Home</a>
     <a href="/about">About</a>
+    <a href="/insights">Insights</a>
     <a href="/faqs">FAQs</a>
     <a href="/testimonials">Testimonials</a>
+    <a href="/how-it-works">How it works</a>
     <a href="https://app.vestlife.com" target="_blank" rel="noopener noreferrer">Get Anya</a>
   </div>
 

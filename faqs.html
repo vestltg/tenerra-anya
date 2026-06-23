@@ -86,7 +86,7 @@
       text-align: center;
       font-size: 17px;
       line-height: 1.7;
-      color: #555;
+      color: var(--color-text-secondary);
       text-wrap: balance;
     }
 
@@ -177,7 +177,7 @@
     .faq-answer {
       font-size: 16px;
       font-weight: 400;
-      color: #333;
+      color: var(--color-text-primary);
       line-height: 1.6;
       padding-bottom: 2rem;
       max-width: 600px;
@@ -188,7 +188,7 @@
     .faq-answer p {
       font-size: 16px;
       line-height: 1.7;
-      color: #333;
+      color: var(--color-text-primary);
       margin-bottom: 1rem;
     }
     .faq-answer p:last-child { margin-bottom: 0; }
@@ -455,10 +455,11 @@
   <nav class="nav">
     <a href="/" class="nav-wordmark"><img src="/assets/images/tenerra-logo.png" alt="Anya icon" /><span class="nav-wm-wordmark"><span class="nav-wm-name">anya</span><span class="nav-wm-domain">.tenerra.ai</span></span></a>
     <ul class="nav-links">
-      <li><a href="/" class="nav-link">Home</a></li>
       <li><a href="/about" class="nav-link">About</a></li>
+      <li><a href="/insights" class="nav-link">Insights</a></li>
       <li><a href="/faqs" class="nav-link" aria-current="page">FAQs</a></li>
       <li><a href="/testimonials" class="nav-link">Testimonials</a></li>
+      <li><a href="/how-it-works" class="nav-link">How it works</a></li>
     </ul>
 
     <!-- More dropdown: visible when nav-links are hidden (≤860px) -->
@@ -470,10 +471,11 @@
         </svg>
       </button>
       <div class="nav-more-menu" id="more-menu" role="menu">
-        <a href="/">Home</a>
         <a href="/about">About</a>
+        <a href="/insights">Insights</a>
         <a href="/faqs">FAQs</a>
         <a href="/testimonials">Testimonials</a>
+        <a href="/how-it-works">How it works</a>
       </div>
     </div>
 
@@ -488,10 +490,11 @@
     </button>
   </nav>
   <div class="nav-mobile-menu" id="mobileMenu">
-    <a href="/">Home</a>
     <a href="/about">About</a>
+    <a href="/insights">Insights</a>
     <a href="/faqs">FAQs</a>
     <a href="/testimonials">Testimonials</a>
+    <a href="/how-it-works">How it works</a>
     <a href="https://app.vestlife.com" target="_blank" rel="noopener noreferrer">Get Anya</a>
   </div>
 

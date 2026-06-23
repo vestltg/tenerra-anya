@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" role="img" aria-labelledby="t1 d1" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <title id="t1">Anya — My Documents</title>
+  <desc id="d1">A parent has uploaded an IEP document to My Documents and Anya is reading it. Below is the Add to Vest upload area.</desc>
+  <rect x="0.5" y="0.5" width="599" height="299" rx="14" fill="#FAF9FB" stroke="#E4E0EB"/>
+  <rect x="0" y="0" width="600" height="44" rx="14" fill="#FFFFFF"/>
+  <path d="M0 44 H600" stroke="#E4E0EB"/>
+  <rect x="16" y="13" width="18" height="18" rx="5" fill="#8256F7"/>
+  <text x="25" y="26" fill="#FFFFFF" font-size="11" font-weight="600" text-anchor="middle">A</text>
+  <text x="44" y="27" fill="#2C2442" font-size="14" font-weight="500">My Documents</text>
+
+  <rect x="16" y="60" width="568" height="64" rx="10" fill="#FFFFFF" stroke="#E4E0EB"/>
+  <rect x="28" y="72" width="40" height="40" rx="9" fill="#EFEDFE"/>
+  <rect x="40" y="82" width="16" height="20" rx="2.5" fill="none" stroke="#8256F7" stroke-width="1.6"/>
+  <path d="M51 82 V87 H56" fill="none" stroke="#8256F7" stroke-width="1.4" stroke-linejoin="round"/>
+  <path d="M44 94 H52 M44 98 H52" stroke="#8256F7" stroke-width="1.3" stroke-linecap="round"/>
+  <text x="80" y="89" fill="#2C2442" font-size="14" font-weight="500">Terrance_IEP_2026.pdf</text>
+  <text x="80" y="107" fill="#6B6284" font-size="12">Individualized Education Plan · 1.2 MB</text>
+  <circle cx="450" cy="92" r="7" fill="none" stroke="#5FA838" stroke-width="1.5"/>
+  <path d="M447 92 l2 2 l4 -4" fill="none" stroke="#5FA838" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="464" y="96" fill="#4E9A2E" font-size="12.5">Anya is reading</text>
+
+  <rect x="16" y="140" width="568" height="142" rx="10" fill="#FFFFFF" stroke="#CFC8EC" stroke-dasharray="5 4"/>
+  <path d="M293 176 v18 M286 183 l7 -7 l7 7" fill="none" stroke="#A79FCE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M283 196 v6 h28 v-6" fill="none" stroke="#A79FCE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="300" y="226" fill="#2C2442" font-size="14" font-weight="500" text-anchor="middle">Add to Vest</text>
+  <text x="300" y="244" fill="#6B6284" font-size="12" text-anchor="middle">Add your files to organize them by category</text>
+  <rect x="250" y="256" width="100" height="30" rx="8" fill="#8256F7"/>
+  <text x="300" y="275" fill="#FFFFFF" font-size="13" font-weight="500" text-anchor="middle">Add to Vest</text>
+</svg>
