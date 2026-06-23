@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 280" role="img" aria-labelledby="t2 d2" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <title id="t2">Anya — About Me Pockets</title>
+  <desc id="d2">Inside the About Me section, three Pockets are shown: My Personality with one entry, My Story, and Top 10 Things About Me. Below, a parent is writing a personal entry in My Personality.</desc>
+  <rect x="0.5" y="0.5" width="599" height="279" rx="14" fill="#FAF9FB" stroke="#E4E0EB"/>
+  <rect x="0" y="0" width="600" height="44" rx="14" fill="#FFFFFF"/>
+  <path d="M0 44 H600" stroke="#E4E0EB"/>
+  <rect x="16" y="13" width="18" height="18" rx="5" fill="#8256F7"/>
+  <text x="25" y="26" fill="#FFFFFF" font-size="11" font-weight="600" text-anchor="middle">A</text>
+  <text x="44" y="27" fill="#6B6284" font-size="14">Pockets</text>
+  <text x="104" y="27" fill="#A79FCE" font-size="14">›</text>
+  <text x="118" y="27" fill="#2C2442" font-size="14" font-weight="500">About Me</text>
+
+  <rect x="16" y="60" width="181" height="84" rx="10" fill="#FFFFFF" stroke="#8256F7"/>
+  <rect x="28" y="72" width="34" height="34" rx="8" fill="#EFEDFE"/>
+  <circle cx="45" cy="85" r="4.2" fill="none" stroke="#8256F7" stroke-width="1.6"/>
+  <path d="M38 97 q7 -7 14 0" fill="none" stroke="#8256F7" stroke-width="1.6" stroke-linecap="round"/>
+  <rect x="139" y="73" width="50" height="18" rx="6" fill="#EFEDFE"/>
+  <text x="164" y="85.5" fill="#3C3489" font-size="10.5" text-anchor="middle">1 entry</text>
+  <text x="28" y="129" fill="#2C2442" font-size="13" font-weight="500">My Personality</text>
+
+  <rect x="209" y="60" width="181" height="84" rx="10" fill="#FFFFFF" stroke="#E4E0EB"/>
+  <rect x="221" y="72" width="34" height="34" rx="8" fill="#EFEDFE"/>
+  <rect x="231" y="81" width="14" height="16" rx="2" fill="none" stroke="#8256F7" stroke-width="1.5"/>
+  <path d="M238 81 V97" stroke="#8256F7" stroke-width="1.3"/>
+  <text x="221" y="129" fill="#2C2442" font-size="13" font-weight="500">My Story</text>
+
+  <rect x="402" y="60" width="182" height="84" rx="10" fill="#FFFFFF" stroke="#E4E0EB"/>
+  <rect x="414" y="72" width="34" height="34" rx="8" fill="#EFEDFE"/>
+  <path d="M431 80 l2.4 4.9 l5.4 0.8 l-3.9 3.8 l0.9 5.4 l-4.8 -2.5 l-4.8 2.5 l0.9 -5.4 l-3.9 -3.8 l5.4 -0.8 Z" fill="none" stroke="#8256F7" stroke-width="1.4" stroke-linejoin="round"/>
+  <text x="414" y="129" fill="#2C2442" font-size="12.5" font-weight="500">Top 10 Things About Me</text>
+
+  <rect x="16" y="160" width="568" height="104" rx="10" fill="#FFFFFF" stroke="#E4E0EB"/>
+  <text x="28" y="183" fill="#8256F7" font-size="12" font-weight="500">Writing in My Personality</text>
+  <text x="28" y="206" fill="#3A3450" font-size="13" font-family="'DM Serif Display', Georgia, serif">"Terrance loves being around people and will park himself in the</text>
+  <text x="28" y="226" fill="#3A3450" font-size="13" font-family="'DM Serif Display', Georgia, serif">kitchen just to be near whoever's cooking. He talks constantly —</text>
+  <text x="28" y="246" fill="#3A3450" font-size="13" font-family="'DM Serif Display', Georgia, serif">whatever pops into his head, he says it…"</text>
+</svg>
