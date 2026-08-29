@@ -1,0 +1,4 @@
+# Preserve inbound links / SEO after the Insights → Stories rename.
+# Old→new path only — do NOT add pretty-URL→.html rewrites (redirect-loop risk on CF Pages).
+/insights /stories 301
+/insights/* /stories/:splat 301

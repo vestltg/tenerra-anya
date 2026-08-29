@@ -258,6 +258,35 @@ img {
   box-shadow: none;
 }
 
+/* Ghost/outlined sign-in pill — quieter than the primary CTA */
+.nav-signin {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-primary);
+  background: #ffffff;
+  border: 1.5px solid var(--color-border);
+  padding: 8px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  transition: background 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease,
+    transform 0.1s ease;
+}
+
+.nav-signin:hover {
+  background: var(--color-icon-tile);
+  border-color: var(--color-primary);
+  transform: translateY(-1px);
+}
+
+.nav-signin:active {
+  transform: translateY(0);
+}
+
 .nav-more {
   position: relative;
   display: none;
@@ -616,6 +645,11 @@ img {
 
   .nav-hamburger {
     display: block;
+  }
+
+  /* Sign in moves into the mobile menu; keep the header uncluttered */
+  .nav-signin {
+    display: none;
   }
 
   .nav-actions {
