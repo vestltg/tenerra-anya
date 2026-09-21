@@ -1,6 +1,6 @@
 # Anya — Knowledge Continuity for Special Needs Parents
 
-> Anya preserves what a parent knows about their child with intellectual and developmental disabilities (IDD) — making that knowledge clear, durable, and ready for the people who will need it. Built by Tenerra, Inc., founded by Michael Pearce, an IDD attorney with 30 years of experience in Sacramento County. Anya was previously offered under the product name VestLife.
+> Anya helps parents of children with intellectual and developmental disabilities, autism, neurodevelopmental disabilities, and complex behavioral health needs capture what they know about their child—so others can better understand and support them. Built by Tenerra, Inc., founded by Michael Pearce, an IDD attorney with 30 years of experience in Sacramento County. Anya was previously offered under the product name VestLife.
 
 Anya is not a medical tool, a therapy platform, or a general-purpose AI assistant. It is continuity infrastructure for one specific problem: most of what a parent knows about their child is never made usable for others — the routines that calm, the signs that something's wrong, the things that took years to figure out. When that parent can no longer explain it, the people who step in start from zero.
 
