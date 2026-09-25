@@ -5,6 +5,7 @@
   --color-text-muted: #777;
   --color-text-light: #999;
   --color-primary: #8256F7;
+  --color-primary-strong: #7445EC; /* filled buttons + small purple text: meets WCAG AA with white */
   --color-primary-soft: #FAF9FB;
   --color-border: #E4E0EB;
   --color-accent: #5FA838;
@@ -95,7 +96,7 @@ img {
 }
 
 .button-primary {
-  background: var(--color-primary);
+  background: var(--color-primary-strong);
   color: #ffffff;
   padding: 14px 24px;
   border-radius: 8px;
@@ -200,8 +201,8 @@ img {
   font-size: 13px;
   font-weight: 600;
   color: #ffffff;
-  background: var(--color-primary);
-  border: 1.5px solid var(--color-primary);
+  background: var(--color-primary-strong);
+  border: 1.5px solid var(--color-primary-strong);
   padding: 8px 18px;
   border-radius: 8px;
   cursor: pointer;
@@ -542,7 +543,7 @@ img {
 
 .cookie-btn-accept {
   border: none;
-  background: #8256F7;
+  background: var(--color-primary-strong);
   color: #fff;
   font-weight: 500;
 }

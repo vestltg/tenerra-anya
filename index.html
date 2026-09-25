@@ -188,26 +188,104 @@
       max-width: 720px;
       margin: 0 auto 14px auto;
     }
-    /* Subhead paired with the hero H1: same family, ~0.58 of H1 size */
-    .hero-subhead {
-      font-family: var(--font-body);
-      font-size: clamp(1.25rem, 2.3vw, 1.5rem);
-      font-weight: 700;
-      line-height: 1.4;
-      letter-spacing: normal;
-      color: var(--color-text-primary);
-      max-width: 680px;
-      margin: 0 0 var(--space-4);
-      text-wrap: pretty;
-    }
-
-    /* Left-aligned intro column: eyebrow, H1, H2, support copy share one left edge */
-    .hero-intro {
+    /* ─── HERO TYPE SCALE & SHARED LEFT EDGE ─── */
+    /* Hero copy and the CTA block below it share one 720px left-aligned column */
+    .hero-intro,
+    .hero-follow {
       width: 100%;
-      max-width: 680px;
+      max-width: 720px;
       margin: 0 auto;
     }
-    .hero .hero-intro > * { text-align: left; }
+    .hero .hero-intro > *,
+    .hero .hero-follow > * { text-align: left; }
+
+    .hero .hero-eyebrow {
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      color: var(--color-primary-strong);
+      margin: 0 0 20px;
+    }
+    /* H1 is an observation, not a shout: largest text, but medium weight */
+    .hero h1.hero-headline {
+      font-size: 38px; /* fits one line in the 720px column (Montserrat 500 needs ≤39.9px) */
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: -0.5px;
+      color: var(--color-text-primary);
+      max-width: none;
+      margin: 0 0 28px;
+    }
+    .hero .hero-subhead {
+      font-family: var(--font-body);
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.45;
+      letter-spacing: normal;
+      color: var(--color-text-primary);
+      max-width: 720px;
+      margin: 0 0 24px;
+      text-wrap: pretty;
+    }
+    .hero .hero-support {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.65;
+      color: var(--color-text-secondary);
+      max-width: 660px;
+      margin: 0 0 20px;
+    }
+    .hero .hero-privacy {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--color-text-secondary);
+      margin: 0;
+    }
+    .hero-privacy svg { width: 16px; height: 16px; flex: none; }
+
+    .hero-divider {
+      width: 64px;
+      height: 2px;
+      border: 0;
+      background: var(--color-border);
+      margin: 72px 0 40px;
+    }
+    .hero-cta-row {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .hero-cta-row .cta-button { margin: 0; }
+    .hero .hero-cta-row p {
+      margin: 0;
+      font-size: 14px;
+      color: var(--color-text-secondary);
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .hero .hero-eyebrow { font-size: 13px; letter-spacing: 2.5px; margin-bottom: 18px; }
+      .hero h1.hero-headline { font-size: 36px; line-height: 1.2; letter-spacing: -0.4px; margin-bottom: 25px; }
+      .hero .hero-subhead { font-size: 22px; margin-bottom: 22px; }
+      .hero .hero-support { font-size: 17.5px; line-height: 1.62; margin-bottom: 18px; }
+      .hero-divider { margin: 60px 0 36px; }
+      /* Site-wide ≤768px rule forces full-width buttons; keep the hero CTA inline at 768 */
+      .hero-cta-row .cta-button { width: auto !important; max-width: none; }
+    }
+
+    @media (max-width: 767px) {
+      .hero .hero-eyebrow { font-size: 12px; letter-spacing: 2px; margin-bottom: 16px; }
+      .hero h1.hero-headline { font-size: 30px; line-height: 1.22; letter-spacing: -0.3px; margin-bottom: 22px; }
+      .hero .hero-subhead { font-size: 20px; margin-bottom: 19px; }
+      .hero .hero-support { font-size: 17px; line-height: 1.6; margin-bottom: 16px; }
+      .hero .hero-privacy { font-size: 14px; }
+      .hero-divider { width: 48px; margin: 48px 0 32px; }
+      .hero-cta-row { flex-direction: column; align-items: stretch; gap: 12px; }
+      .hero-cta-row .cta-button { width: 100%; text-align: center; }
+      .hero .hero-follow .hero-cta-row p { text-align: center; }
+    }
         /* ─── HERO ─── */
     .hero {
       min-height: auto;
@@ -601,7 +679,7 @@
 
     /* ─── CTA BUTTON ─── */
     .cta-button {
-      background: linear-gradient(135deg, #8256F7 0%, #A678F0 100%);
+      background: linear-gradient(135deg, var(--color-primary-strong) 0%, var(--color-primary) 100%);
       color: #fff;
       font-size: 16px;
       font-weight: 600;
@@ -733,7 +811,7 @@
     }
 
     .first-step-button {
-      background: linear-gradient(135deg, #8256F7 0%, #A678F0 100%);
+      background: linear-gradient(135deg, var(--color-primary-strong) 0%, var(--color-primary) 100%);
       color: #fff;
       font-family: 'Montserrat', -apple-system, sans-serif;
       font-size: 15px;
@@ -902,9 +980,6 @@
       }
 
       /* ── HERO ── */
-      h1.hero-headline {
-        margin-bottom: 12px !important;
-      }
       .hero-core {
         font-size: 16px !important;
         line-height: 1.6 !important;
@@ -1263,25 +1338,29 @@
 
     <p class="hero-eyebrow">For parents of a son or daughter with lifelong care needs</p>
 
-    <h1 class="hero-headline" style="font-size:clamp(1.25rem,2.3vw,1.5rem);font-weight:700;line-height:1.4;max-width:680px;margin:0 0 12px;">No one knows your child like you&nbsp;do.</h1>
+    <h1 class="hero-headline">No one knows your child like you&nbsp;do.</h1>
 
-    <h2 class="hero-subhead">Anya is AI built to carry forward what you’ve spent their lifetime learning.</h2>
+    <h2 class="hero-subhead">Anya is AI built to carry forward what you’ve spent their lifetime learning: the thousand things that don’t fit on forms or in a legal document.</h2>
 
-    <p class="hero-description" style="max-width:600px;margin:0;font-size:18px;line-height:1.8;color:var(--color-text-secondary);">Keep telling Anya about your life together, so you’re not carrying it all alone. She’ll organize it into a living understanding of your child as life unfolds, and remember and find what you need, when and where you need it. And when you choose someone else to step in, they won’t have to start from zero.</p>
+    <p class="hero-description hero-support">Keep telling Anya about your life together, so you’re not carrying it all alone. She’ll organize it into a living understanding of your child as life unfolds. And when someone else needs to step in, they won’t have to start from zero.</p>
 
-    <p style="margin-top:12px;font-size:14px;color:var(--color-text-secondary);">Private. Never sold. Never used to train other AI.</p>
+    <p class="hero-privacy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Private. Never sold.</p>
 
     </div>
 
-    <div class="logo-wrap" style="margin-top:28px;">
-      <img src="/assets/images/anya-logo-your-child-known.webp" alt="Anya — Your child, known." width="730" height="240" decoding="async" style="width:min(220px,70%);height:auto;display:block;margin:0 auto;" />
+    <div class="hero-follow">
+
+    <hr class="hero-divider" />
+
+    <div class="hero-cta-row">
+      <a href="https://app.vestlife.com" target="_blank" rel="noopener noreferrer" class="cta-button cta-button-static" style="display:inline-block;text-decoration:none;">Start Your Free Trial</a>
+
+      <p>7-day free trial &middot; $199/year</p>
     </div>
 
-    <a href="https://app.vestlife.com" target="_blank" rel="noopener noreferrer" class="cta-button cta-button-static" style="display:inline-block;text-decoration:none;margin-top:28px;">Start Your Free Trial</a>
+    <p style="max-width:600px;margin:32px 0 0;font-size:14px;line-height:1.6;color:var(--color-text-secondary);">Anya helps parents of children with intellectual and developmental disabilities, autism, neurodevelopmental disabilities, and complex behavioral health needs capture what they know about their child&#8212;so others can better understand and support them.</p>
 
-    <p style="margin-top:12px;font-size:14px;color:var(--color-text-secondary);">7-day free trial &middot; $199/year</p>
-
-    <p style="max-width:600px;margin:32px auto 0;font-size:14px;line-height:1.6;color:var(--color-text-secondary);">Anya helps parents of children with intellectual and developmental disabilities, autism, neurodevelopmental disabilities, and complex behavioral health needs capture what they know about their child&#8212;so others can better understand and support them.</p>
+    </div>
   </section>
 
   <!-- YOU'RE THE PERSON WHO KNOWS -->
