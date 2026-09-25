@@ -188,6 +188,18 @@
       max-width: 720px;
       margin: 0 auto 14px auto;
     }
+    /* Subhead paired with the hero H1: same family, ~0.58 of H1 size */
+    .hero-subhead {
+      font-family: var(--font-body);
+      font-size: clamp(1.25rem, 2.3vw, 1.5rem);
+      font-weight: 400;
+      line-height: 1.4;
+      letter-spacing: normal;
+      color: var(--color-text-secondary);
+      max-width: 680px;
+      margin: 0 auto var(--space-4);
+      text-wrap: balance;
+    }
         /* ─── HERO ─── */
     .hero {
       min-height: auto;
@@ -1245,7 +1257,7 @@
 
     <h1 class="hero-headline" style="font-size:clamp(1.75rem,4.5vw,2.6rem);font-weight:400;line-height:1.25;max-width:680px;margin:0 auto 12px;">No one knows your child like you&nbsp;do.</h1>
 
-    <h2 class="hero-description" style="max-width:680px;margin:0 auto 28px;font-size:20px;font-weight:400;line-height:1.4;letter-spacing:normal;color:var(--color-text-secondary);">Anya is AI built to carry forward what you’ve spent their lifetime learning: the thousand things that don’t fit on forms or in a legal document.</h2>
+    <h2 class="hero-subhead">Anya is AI built to carry forward what you’ve spent their lifetime learning: the thousand things that don’t fit on forms or in a legal document.</h2>
 
     <p class="hero-description" style="max-width:600px;margin:0 auto;font-size:18px;line-height:1.8;color:var(--color-text-secondary);">Keep telling Anya about your life together, so you’re not carrying it all alone. She’ll organize it into a living understanding of your child as life unfolds. And when someone else needs to step in, they won’t have to start from zero.</p>
 
