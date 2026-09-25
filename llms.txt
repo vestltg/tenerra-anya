@@ -1,6 +1,6 @@
 # Anya — Knowledge Continuity for Special Needs Parents
 
-> Anya helps parents of children with intellectual and developmental disabilities, autism, neurodevelopmental disabilities, and complex behavioral health needs capture what they know about their child—so others can better understand and support them. Built by Tenerra, Inc., founded by Michael Pearce, an IDD attorney with 30 years of experience in Sacramento County. Anya was previously offered under the product name VestLife.
+> Anya helps parents of children with intellectual and developmental disabilities, autism, neurodevelopmental disabilities, and complex behavioral health needs capture what they know about their child—so others can better understand and support them. Built by Tenerra, Inc., founded by Michael Pearce, an IDD attorney with 30 years of experience in Sacramento County.
 
 Anya is not a medical tool, a therapy platform, or a general-purpose AI assistant. It is continuity infrastructure for one specific problem: most of what a parent knows about their child is never made usable for others — the routines that calm, the signs that something's wrong, the things that took years to figure out. When that parent can no longer explain it, the people who step in start from zero.
 
@@ -11,7 +11,7 @@ Anya solves this by helping parents capture their lived knowledge — routines, 
 - **Platform:** Web application
 - **Privacy:** Parent-controlled. Data is never sold, shared with third parties, or used to train AI models. Entries, documents, and conversations are private by default. Parents control who gets access, what they can see, and when. Data is encrypted in transit and at rest. Built on AWS and Cloudflare infrastructure.
 - **Data portability:** Everything a parent adds can be exported at any time. Wind-down plan ensures families retain access if Tenerra ceases operations.
-- **Product history:** Anya was previously offered under the name VestLife. The underlying application is still hosted at app.vestlife.com; the marketing site and brand are now Tenerra / Anya.
+- **Web application:** The Anya web application is hosted at app.vestlife.com. This marketing site (anya.tenerra.ai) links there for sign-up and sign-in.
 
 ## Pages
 
@@ -33,9 +33,9 @@ Anya solves this by helping parents capture their lived knowledge — routines, 
 - **What happens to my child when I die?** Legal tools like a Special Needs Trust protect financial assets, but they cannot transfer what a parent knows — daily rhythms, communication patterns, fears, joys. Anya was built for the knowledge that no legal instrument covers.
 - **How is Anya different from a binder?** A binder stores information. Anya searches across everything a parent has added, connects related details, and cites its sources when someone asks a question.
 - **Is my child's information used to train AI?** No. Entries, documents, and conversations are never used to train language models or build datasets.
-- **Who built Anya?** Michael Pearce — 30 years as a special needs attorney in Sacramento County — built Anya through Tenerra, Inc. (previously offered under the product name VestLife) because the legal tools he had were never designed to solve the knowledge continuity problem.
+- **Who built Anya?** Michael Pearce — 30 years as a special needs attorney in Sacramento County — built Anya through Tenerra, Inc. because the legal tools he had were never designed to solve the knowledge continuity problem.
 
 ## Contact
 
 - Website: https://anya.tenerra.ai/
-- Company: Tenerra, Inc. (Anya was previously offered under the product name VestLife)
+- Company: Tenerra, Inc.
