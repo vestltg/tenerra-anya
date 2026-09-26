@@ -19,3 +19,6 @@
 
 /.well-known/oauth-protected-resource
   Content-Type: application/json; charset=utf-8
+
+/docs/geo/*
+  X-Robots-Tag: noindex, nofollow
