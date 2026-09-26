@@ -1056,7 +1056,7 @@
       }
     }
 
-    /* ── Homepage testimonial: Betty & Barbara card (right before the final CTA) ── */
+    /* ── Homepage testimonial cards: Kim B. (beneath the hero CTA) and Betty & Barbara (before the final CTA) ── */
     .home-quote-card {
       max-width: 760px;
       margin: 0 auto;
@@ -1100,50 +1100,8 @@
       margin: 0;
     }
 
-    /* ── Homepage testimonial: Kim B. plain pull-quote (directly beneath the hero CTA) ── */
-    .home-pullquote {
-      position: relative;
-      max-width: 560px;
-      margin: 0 auto;
-      text-align: center;
-    }
-    .home-pullquote::before {
-      content: '\201C';
-      position: absolute;
-      top: -30px;
-      left: 50%;
-      transform: translateX(-50%);
-      font-family: var(--font-body);
-      font-size: 70px;
-      line-height: 1;
-      color: var(--color-primary);
-      opacity: 0.14;
-      pointer-events: none;
-    }
-    .home-pullquote-lead {
-      position: relative;
-      z-index: 1;
-      font-family: var(--font-body);
-      font-style: italic;
-      font-size: clamp(1.25rem, 3vw, 1.625rem);
-      font-weight: 400;
-      line-height: 1.4;
-      letter-spacing: -0.005em;
-      color: var(--color-text-primary);
-      margin: 0 0 12px;
-    }
-    .home-pullquote-attr {
-      position: relative;
-      z-index: 1;
-      font-family: var(--font-ui);
-      font-weight: 400;
-      font-size: 14px;
-      color: var(--color-text-secondary);
-      margin: 0;
-    }
     @media (max-width: 600px) {
       .home-quote-card { padding: 2rem 1.5rem 1.5rem; }
-      .home-pullquote-lead { font-size: 18px; }
     }</style>
 <script type="application/ld+json">
 {
@@ -1311,13 +1269,11 @@
 
     <h1 class="hero-subhead">Anya is AI built to carry forward the thousand truths about your child that no form or legal document was ever meant to hold.</h1>
 
+    <p class="hero-description hero-support">Tell Anya what you know, so you don’t have to hold it alone. She turns it into a living understanding of your child, kept current and shaped by what you want others to know.</p>
+
+    <p class="hero-description hero-support">When someone needs to step into your role, they won’t start from zero.</p>
+
     <p class="hero-subhead">Because no one knows your child like you&nbsp;do.</p>
-
-    <p class="hero-description hero-support">Tell Anya what you know about your child, so you don’t have to hold it alone. Over time, she builds it into a living understanding of who they are.</p>
-
-    <p class="hero-description hero-support">Today, she keeps that understanding current and ready, so what matters most is there when you need it, shaped by what you want others to know.</p>
-
-    <p class="hero-description hero-support">And tomorrow, when someone needs to step into your role, they won’t have to start from zero.</p>
 
     <div class="hero-action-row">
       <p class="hero-privacy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Private. Never sold.</p>
@@ -1333,12 +1289,12 @@
 
     <div class="hero-follow">
 
-    <!-- HOMEPAGE TESTIMONIAL: Kim B. pull-quote (directly beneath the hero CTA) -->
+    <!-- HOMEPAGE TESTIMONIAL: Kim B. card (directly beneath the hero CTA) -->
     <section class="section" style="padding-top:64px; padding-bottom:32px;">
-      <div class="home-pullquote">
-        <p class="home-pullquote-lead">&ldquo;Before Anya, I was the one holding all of it &mdash; every form, every account, every provider contact. Now I&rsquo;m not the only one holding it. Anya is too.&rdquo;</p>
-        <p class="home-pullquote-attr">Kim B. &mdash; parent of two adult children with autism</p>
-      </div>
+      <figure class="home-quote-card">
+        <blockquote class="home-quote-text">&ldquo;Before Anya, I was the one holding all of it &mdash; every form, every account, every provider contact. Now I&rsquo;m not the only one holding it. Anya is too.&rdquo;</blockquote>
+        <figcaption class="home-quote-attr">Kim B. &mdash; parent of two adult children with autism</figcaption>
+      </figure>
     </section>
 
     <p class="section-subhead" style="margin:32px auto 0;text-align:center;">Anya is AI that helps parents of children of all ages capture what they know about their child so others can see them as a person, and not just their diagnosis. It’s built for parents of children with intellectual and developmental disabilities, autism, neurodevelopmental disabilities, complex behavioral health needs, and lifelong care needs.</p>
@@ -1507,7 +1463,7 @@
   <section class="section" style="padding-top:8px;">
     <figure class="home-quote-card">
       <blockquote class="home-quote-text">&ldquo;The first time we asked Anya a question that required her to synthesize her knowledge of our son, we were stunned by how well she &lsquo;knew&rsquo; him.&rdquo;</blockquote>
-      <figcaption class="home-quote-attr">Betty and Barbara &mdash; parents of adult son with Down syndrome</figcaption>
+      <figcaption class="home-quote-attr">Betty and Barbara &mdash; parents of an adult son with Down syndrome</figcaption>
     </figure>
   </section>
 
