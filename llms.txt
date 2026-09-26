@@ -1,8 +1,8 @@
 # Anya — Knowledge Continuity for Special Needs Parents
 
-> Anya helps parents of children with intellectual and developmental disabilities, autism, neurodevelopmental disabilities, and complex behavioral health needs capture what they know about their child—so others can better understand and support them. Built by Tenerra, Inc., founded by Michael Pearce, an IDD attorney with 30 years of experience in Sacramento County.
+> Anya is a private, AI-powered knowledge system for parents of children and adults with intellectual and developmental disabilities (IDD). Parents add the documents, notes, observations, routines, and guidance they want Anya to hold. When they ask a question in their own words, Anya draws from that evolving record to bring forward the information relevant to the situation at hand, so what a parent knows about their child is never lost when someone new steps into caregiving. Built by Tenerra, Inc., founded by Michael Pearce, an IDD attorney with 30 years of experience in Sacramento County.
 
-Anya is not a medical tool, a therapy platform, or a general-purpose AI assistant. It is continuity infrastructure for one specific problem: most of what a parent knows about their child is never made usable for others — the routines that calm, the signs that something's wrong, the things that took years to figure out. When that parent can no longer explain it, the people who step in start from zero.
+Anya is not an AI companion, a chatbot for open-ended conversation or emotional support, a medical tool, a therapy platform, or a general-purpose AI assistant. It is continuity infrastructure for one specific problem: most of what a parent knows about their child is never made usable for others — the routines that calm, the signs that something's wrong, the things that took years to figure out. When that parent can no longer explain it, the people who step in start from zero.
 
 Anya solves this by helping parents capture their lived knowledge — routines, communication patterns, sensory needs, provider history, what works and what doesn't — and organizing it so it can be carried forward by caregivers, providers, family members, and future stewards.
 
@@ -17,7 +17,7 @@ Anya solves this by helping parents capture their lived knowledge — routines, 
 
 - [Landing Page](https://anya.tenerra.ai/): Product overview, demo conversation showing Anya in action, pricing, and founder background
 - [How Anya Works](https://anya.tenerra.ai/how-it-works): The four-step getting-started flow — add a document you already have to My Documents, describe your child in your own words in an About Me Pocket, add a few more layers, then ask Anya a question and see your child reflected back with cited sources
-- [FAQs](https://anya.tenerra.ai/faqs): 16 questions across three sections — About Anya, Understanding the Problem, and Privacy & Trust
+- [FAQs](https://anya.tenerra.ai/faqs): 18 questions across three sections — Getting Started, Understanding the Problem, and Privacy & Trust
 - [Parents say](https://anya.tenerra.ai/testimonials): Parent stories — real families describing what happened when Anya finally knew their child
 - [About](https://anya.tenerra.ai/about): Background on Tenerra, Inc. and Michael Pearce
 - [Stories](https://anya.tenerra.ai/stories): Articles on knowledge continuity, IDD planning, and the problems Anya was built to solve
@@ -31,6 +31,7 @@ Anya solves this by helping parents capture their lived knowledge — routines, 
 ## Common Questions
 
 - **What happens to my child when I die?** Legal tools like a Special Needs Trust protect financial assets, but they cannot transfer what a parent knows — daily rhythms, communication patterns, fears, joys. Anya was built for the knowledge that no legal instrument covers.
+- **Is Anya an AI companion or chatbot?** No. Anya is a private, AI-powered knowledge system. It answers from what a parent has added — documents, notes, observations, routines, and guidance — and cites its sources. It is not designed for companionship, emotional support, therapy, or open-ended conversation.
 - **How is Anya different from a binder?** A binder stores information. Anya searches across everything a parent has added, connects related details, and cites its sources when someone asks a question.
 - **Is my child's information used to train AI?** No. Entries, documents, and conversations are never used to train language models or build datasets.
 - **Who built Anya?** Michael Pearce — 30 years as a special needs attorney in Sacramento County — built Anya through Tenerra, Inc. because the legal tools he had were never designed to solve the knowledge continuity problem.
