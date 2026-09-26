@@ -223,18 +223,19 @@
     .hero-privacy svg { width: 16px; height: 16px; flex: none; }
 
     /* Privacy note and CTA share one row at the end of the hero copy */
+    /* Privacy note on the left; CTA on the right with the price line centered beneath it */
     .hero-action-row {
-      display: flex;
+      display: grid;
+      grid-template-columns: 1fr auto;
       align-items: center;
-      flex-wrap: wrap;
-      gap: 16px 28px;
+      column-gap: 28px;
+      row-gap: 10px;
       margin-top: 28px;
     }
-    .hero-cta-row {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
+    .hero-cta-row { display: contents; }
+    .hero-action-row .hero-privacy { grid-column: 1; grid-row: 1; }
+    .hero-action-row .cta-button { grid-column: 2; grid-row: 1; }
+    .hero .hero-action-row .hero-cta-row p { grid-column: 2; grid-row: 2; text-align: center; }
     .hero-cta-row .cta-button { margin: 0; }
     .hero .hero-cta-row p {
       margin: 0;
@@ -255,11 +256,9 @@
       .hero .hero-subhead { font-size: 20px; margin-bottom: 19px; }
       .hero .hero-support { font-size: 17px; line-height: 1.6; margin-bottom: 16px; }
       .hero .hero-privacy { font-size: 14px; }
-      .hero-action-row { flex-direction: column-reverse; align-items: stretch; gap: 16px; }
-      .hero .hero-action-row .hero-privacy { justify-content: center; }
-      .hero-cta-row { flex-direction: column; align-items: stretch; gap: 12px; }
+      .hero-action-row { display: flex; flex-direction: column; align-items: stretch; gap: 12px; }
+      .hero .hero-action-row .hero-privacy { order: 3; justify-content: center; margin-top: 4px; }
       .hero-cta-row .cta-button { width: 100%; text-align: center; }
-      .hero .hero-cta-row p { text-align: center; }
     }
         /* ─── HERO ─── */
     .hero {
