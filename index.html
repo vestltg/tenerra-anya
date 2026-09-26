@@ -280,6 +280,8 @@
     /* Hero glow removed — clean white background */
 
     .hero > * { position: relative; z-index: 1; }
+    /* The hero already ends with its own bottom padding; the next section starts flush so the gap matches the hero rhythm */
+    .hero + .section { padding-top: 0 !important; }
 
     .logo-wrap {
       margin-top: var(--space-3);
@@ -1344,7 +1346,7 @@
       </div>
     </section>
 
-    <p style="max-width:600px;margin:32px 0 0;font-size:14px;line-height:1.6;color:var(--color-text-secondary);">Anya helps parents of children with intellectual and developmental disabilities, autism, neurodevelopmental disabilities, complex behavioral health needs, and lifelong care needs capture what they know about their child&#8212;so others can better understand and support them.</p>
+    <p style="max-width:560px;margin:32px auto 0;text-align:center;font-size:15px;line-height:1.6;color:var(--color-text-secondary);">Anya is AI that helps parents of children of all ages capture what they know about their child so others can see them as a person, and not just their diagnosis. It’s built for parents of children with intellectual and developmental disabilities, autism, neurodevelopmental disabilities, complex behavioral health needs, and lifelong care needs.</p>
 
     </div>
   </section>
